@@ -5,6 +5,9 @@
 
 // colors
 
+// dimensions
+$searchbar-height: 50px;
+
 .navbar-ul{
 	display: flex;
 	justify-content: flex-end;
@@ -18,3 +21,29 @@
 .navbar-logo{
 	margin-right: auto;
 }
+
+.searchbar-row{
+	background-color: orange;
+	display: flex;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.searchbar{
+	height: $searchbar-height;
+	margin-right:0;
+}
+
+.searchbar-submit-button{
+	height: $searchbar-height;
+	display: flex;
+	justify-content: center;
+}
+// .searchbar-row-2{
+// 	display: flex;
+// 	align-items: center;
+// 	background-color: blue;
+// 	height: 100px;
+// }

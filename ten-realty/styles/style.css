@@ -13,4 +13,21 @@
 .navbar-logo {
   margin-right: auto; }
 
+.searchbar-row {
+  background-color: orange;
+  display: flex;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.searchbar {
+  height: 50px;
+  margin-right: 0; }
+
+.searchbar-submit-button {
+  height: 50px;
+  display: flex;
+  justify-content: center; }
+
 /*# sourceMappingURL=style.css.map */
