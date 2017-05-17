@@ -1,0 +1,9 @@
+@import url("reset.css");
+* {
+  box-sizing: border-box; }
+
+.sanity-check {
+  color: orange;
+  background-color: grey; }
+
+/*# sourceMappingURL=style.css.map */
