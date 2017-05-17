@@ -4,6 +4,8 @@
 
 
 // colors
+$teal: hsl(185, 35%, 35%);
+$navbar-background-color: hsl(0, 0%, 67%);
 
 // dimensions
 $searchbar-height: 50px;
@@ -23,9 +25,9 @@ $searchbar-height: 50px;
 }
 
 .searchbar-row{
-	background-color: orange;
+	background-color: $navbar-background-color;
 	display: flex;
-	height: 100px;
+	height: 80px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -40,10 +42,43 @@ $searchbar-height: 50px;
 	height: $searchbar-height;
 	display: flex;
 	justify-content: center;
+	background-color: $teal;
+	color: white;
 }
-// .searchbar-row-2{
-// 	display: flex;
-// 	align-items: center;
-// 	background-color: blue;
-// 	height: 100px;
-// }
+
+.realtor-image-container{
+	// border: 2px dashed black;
+}
+
+.image-row{
+	// border: 2px solid black;
+}
+
+.realtor-basic-info-container{
+	// background-color: orange;
+}
+
+.contact-realtor-button{
+	background-color: $teal;
+	color: white;
+	height: $searchbar-height;
+}
+
+.social-media-icon-ul{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+	height: $searchbar-height;
+	align-items: center;
+	li{
+		list-style-type: none; 
+	}
+}
+
+.realtor-personal-info-container{
+	background-color: lighten(orange, 20);
+}
+
+.realtor-personal-info-item{
+	margin-top: 20px;
+}
