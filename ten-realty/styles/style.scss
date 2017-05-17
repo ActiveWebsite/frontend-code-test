@@ -2,7 +2,19 @@
 
 * { box-sizing: border-box; }
 
-.sanity-check{
-	color: orange;
-	background-color: grey;
+
+// colors
+
+.navbar-ul{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.navbar-item{
+	display: inline;
+	margin-right: 20px;
+}
+
+.navbar-logo{
+	margin-right: auto;
 }
