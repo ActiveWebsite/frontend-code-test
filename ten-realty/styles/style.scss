@@ -14,22 +14,46 @@
 
 // colors
 $teal: hsl(185, 35%, 35%);
+$text-teal: #40757A;
 $navbar-background-color: hsl(0, 0%, 67%);
 $realtor-info-background-color: hsl(0, 0%, 93%);
 
 // dimensions
 $searchbar-height: 50px;
 
+// font-sizes
+// $body-font-size: calc(14px + 2vw);
+$realtor-personal-info-font-size: calc(1.5em);
+
+body{
+}
+
 .navbar-ul{
 	display: flex;
 	justify-content: flex-end;
+	// background-color: orange;
+	align-items: center;
 }
 
 .navbar-item{
-	display: inline;
+	display: inline-flex;
+	flex-direction: column;
 	margin-right: 20px;
 }
+.navbar-menu-nav{
+}
 
+.navbar-toggle{
+	display: flex;
+	flex-direction: column;
+	background-color: red;
+	justify-content: center;
+	align-items: center;
+}
+
+.icon-bar{
+	background-color: black;
+}
 .navbar-logo{
 	margin-right: auto;
 }
@@ -91,6 +115,7 @@ $searchbar-height: 50px;
 	// background-color: lighten(orange, 20);
 	margin-bottom: 40px;
 	color: $teal;
+	font-size: $realtor-personal-info-font-size;
 	.realtor-phone-number{
 		color: black;
 	}
@@ -98,6 +123,9 @@ $searchbar-height: 50px;
 
 .realtor-personal-info-item{
 	margin-top: 20px;
+	color: $text-teal;
+	font-size: 1.1em;
+	font-weight: 500;
 }
 
 
@@ -150,9 +178,9 @@ $searchbar-height: 50px;
 	justify-content: space-between;
 }
 .footer-container-1{
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
+	// display: flex;
+	// justify-content: center;
+	// flex-direction: column;
 	align-items: center;
 }
 
@@ -162,8 +190,20 @@ $searchbar-height: 50px;
 	flex-direction: column;
 	align-items: center;
 }
-.footer-icon-ul{
+.footer-phone-number-row{
+	// background-color: red;
+	display: flex;
+	justify-content: center;
+}
 
+.footer-address-row{
+	display: flex;
+	justify-content: center;
+}
+.footer-icon-ul{
+	// background-color: red;
+	display: flex;
+	justify-content: space-between;
 }
 
 .footer-icon-item{
@@ -175,3 +215,14 @@ $searchbar-height: 50px;
 		color: white;
 	}
 }
+
+.footer-container-2-icon-row{
+	display: flex;
+	justify-content: center;
+}
+
+.footer-container-2-icon{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
