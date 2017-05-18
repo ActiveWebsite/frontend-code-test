@@ -54,14 +54,33 @@ body {
   color: white;
   border-radius: 0 3px 3px 0; }
 
+.realtor-image-container img {
+  width: 100%;
+  max-height: 400px;
+  max-width: 300px; }
+
 .realtor-basic-info-container {
-  background-color: #ededed; }
+  background-color: #ededed;
+  display: flex;
+  flex-wrap: wrap; }
+
+.realtor-name-title-icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.realtor-name {
+  margin-bottom: 20px; }
+
+.realtor-title {
+  margin-bottom: 20px; }
 
 .contact-realtor-button {
   background-color: #3a7378;
   color: white;
   height: 50px;
-  border-radius: 3px; }
+  border-radius: 3px;
+  margin-bottom: 20px; }
 
 .social-media-icon-ul {
   display: flex;
@@ -73,11 +92,16 @@ body {
     list-style-type: none; }
 
 .realtor-personal-info-container {
-  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: #3a7378;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  margin-left: 20px; }
   .realtor-personal-info-container .realtor-phone-number {
     color: black; }
+  .realtor-personal-info-container div {
+    margin-bottom: 10px; }
 
 .realtor-personal-info-item {
   margin-top: 20px;
