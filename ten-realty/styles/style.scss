@@ -157,6 +157,12 @@ body{
 
 .secondary-navbar-title{
 	color: $text-teal;
+	font-size: 1.5em;
+	font-weight: 500;
+	display: flex;
+	justify-content: space-between;
+	width: 70vw;
+	// background-color: red;
 }
 
 .secondary-navbar-nav{
