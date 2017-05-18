@@ -1,3 +1,12 @@
+// @media only screen and (max-width: 780px) and (min-width: 480px) {
+//   /*Tablets*/
+// }
+
+// @media screen and (max-width: 480px) {
+//   /*Phones*/
+// }
+
+
 @import url("reset.css");
 
 * { box-sizing: border-box; }
@@ -6,6 +15,7 @@
 // colors
 $teal: hsl(185, 35%, 35%);
 $navbar-background-color: hsl(0, 0%, 67%);
+$realtor-info-background-color: hsl(0, 0%, 93%);
 
 // dimensions
 $searchbar-height: 50px;
@@ -55,13 +65,14 @@ $searchbar-height: 50px;
 }
 
 .realtor-basic-info-container{
-	// background-color: orange;
+	background-color: $realtor-info-background-color;
 }
 
 .contact-realtor-button{
 	background-color: $teal;
 	color: white;
 	height: $searchbar-height;
+	// border-radius: 5px;
 }
 
 .social-media-icon-ul{
@@ -75,10 +86,44 @@ $searchbar-height: 50px;
 	}
 }
 
+
 .realtor-personal-info-container{
-	background-color: lighten(orange, 20);
+	// background-color: lighten(orange, 20);
+	margin-bottom: 40px;
+	color: $teal;
+	.realtor-phone-number{
+		color: black;
+	}
 }
 
 .realtor-personal-info-item{
 	margin-top: 20px;
 }
+
+
+.custom-dropdown{
+	height: $searchbar-height;
+}
+
+.reviews-navbar-container{
+	display: flex;
+	justify-content: center;
+}
+.reviews-navbar{
+	background-color: red;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	border: 10px solid black;
+
+}
+
+.reviews-navbar-item{
+	background-color: white;
+	border: 1px solid black;
+	text-align: center;
+	color: $teal;
+	height: $searchbar-height;
+}
+
