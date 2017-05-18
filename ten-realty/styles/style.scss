@@ -15,6 +15,10 @@
 	border: none;
 }
 
+// media query
+$small-screen: "(max-width: 600px)";
+
+
 // colors
 $teal: hsl(185, 35%, 35%);
 $text-teal: #40757A;
@@ -37,12 +41,17 @@ body{
 
 .navbar-ul{
 	display: flex;
+
 	justify-content: flex-end;
 	// background-color: orange;
 	align-items: center;
 }
+.top-navbar-nav{
 
+
+}
 .navbar-nav{
+	
 	a{
 		color: $text-teal;
 	}
@@ -59,7 +68,6 @@ body{
 .navbar-toggle{
 	display: flex;
 	flex-direction: column;
-	background-color: red;
 	justify-content: center;
 	align-items: center;
 }
@@ -173,7 +181,6 @@ body{
 .realtor-personal-info-item{
 	margin-top: 20px;
 	color: $text-teal;
-	font-size: 1.1em;
 	font-weight: 500;
 }
 
@@ -184,9 +191,22 @@ body{
 }
 .secondary-navbar-menu-nav{
 	// background-color: red;
-	border: 1px solid black;
+	overflow: hidden;
 	display: flex;
-	justify-content: center
+	justify-content: center;
+	margin-top: 10px;
+	li{
+		font-weight: 500;
+		border-bottom: 1px solid grey;
+		font-size: $realtor-personal-info-font-size;
+	}
+	@media #{$small-screen}{
+      border: 1px solid black;
+ 	 }
+}
+
+.about-me-link{
+	border-bottom: 2px solid $teal !important;
 }
 
 .secondary-navbar-title{
@@ -197,6 +217,9 @@ body{
 	justify-content: space-between;
 	width: 70vw;
 	// background-color: red;
+	@media #{$small-screen}{
+      font-size: 18px;
+ 	 }
 }
 
 .secondary-navbar-nav{
@@ -232,17 +255,29 @@ body{
 	// min-height: 200px;
 }
 .footer-container-1{
-	// display: flex;
-	// justify-content: center;
-	// flex-direction: column;
-	align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-top: 20px;
+	line-height: 2;
+	margin-bottom: 10px;
+	@media #{$small-screen}{
+      align-items: center;
+  }
 }
 
 .footer-container-2{
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-end;
+	margin-top: 20px;
+	line-height: 2;
+	margin-bottom: 10px;
+	 @media #{$small-screen}{
+      align-items: center;
+  }
 }
 .footer-phone-number-row{
 	// background-color: red;
@@ -258,17 +293,35 @@ body{
 	// background-color: red;
 	display: flex;
 	justify-content: space-between;
+	li{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
 }
 
 .footer-icon-item{
 	display: inline;
 }
+.footer-link-ul{
+	// background-color: red;
+	display: flex;
+	justify-content: space-between;
+	li{
+		margin-left: 10px;
+		a{
+			text-decoration: underline;
+		}
+	}
+}
+
 .footer-link-item{
 	display: inline;
 	a{
 		color: white;
 	}
 }
+
+
 
 .footer-container-2-icon-row{
 	display: flex;
@@ -280,3 +333,12 @@ body{
 	margin-right: 10px;
 }
 
+.footer-copyright-row{
+
+}
+.footer-copyright{
+
+}
+.footer-container-2-icon-row{
+	margin-top: 10px;
+}

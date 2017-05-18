@@ -19,7 +19,16 @@
 			<navbar class = "row navbar-row">
 				<ul class = "navbar-ul">
 					<li class = "navbar-item navbar-logo">
-						<img src="./Assets/SVGs/TEN-logo-mark.svg" alt="Ten Realty  Logo">
+						<picture alt="description of image">
+							<!-- low-res, default -->
+							<source src="./Assets/SVGs/TEN-logo-mark.svg">
+							<!-- med-res -->
+							<source src="./Assets/SVGs/TEN-logo-mark.svg" media="(min-width: 400px)">
+							<!-- high-res -->
+							<source src="./Assets/SVGs/TEN-logo-mark.svg" media="(min-width: 800px)">
+							<!-- Fallback content -->
+							<img src="./Assets/SVGs/TEN-logo.svg" alt="description of image">
+						</picture>
 					</li>
 					<li class = "navbar-item"><img src="./Assets/SVGs/contact.svg" alt="Contact Image"><div>Contact</div></li>
 					<li class = "navbar-item"><img src="./Assets/SVGs/account.svg" alt="Account Image"><div>Account</div></li>
@@ -37,7 +46,7 @@
 										</button>
 									</div>
 									<div class="collapse navbar-collapse" id="myNavbar">
-										<ul class="nav navbar-nav">
+										<ul class="nav navbar-nav top-navbar-nav">
 											<li><a href="#">Search</a></li>
 											<li><a href="#">Communities</a></li>
 											<li><a href="#">Services</a></li>
@@ -56,23 +65,16 @@
 						<button type="submit" class="searchbar-submit-button col-xs-3"><img src="./Assets/SVGs/search.svg" alt=""></button>
 					</div>
 				</div>
-
-
-
-
-
 				<div class = "container-fluid realtor-basic-info-container">
-
 					<div class = "realtor-image-container col-xs-9 col-sm-4">
 						<div class = "row image-row">
 							<img src="./Assets/Realtor Image/saramortensun.jpg"  class = "" alt="Realtor Image">
 						</div>
 					</div>
-
 					<div class= "realtor-name-title-icon-container col-xs-12 col-sm-3">
-					<div class = "realtor-name-and-title-container">
-						<h2 class = "realtor-name">Jane Smith</h2>
-						<p class="realtor-title">REALTOR®</p>
+						<div class = "realtor-name-and-title-container">
+							<h2 class = "realtor-name">Jane Smith</h2>
+							<p class="realtor-title">REALTOR®</p>
 						</div>
 						<div class = "contact-button-container">
 							<button class = "col-xs-12 contact-realtor-button" type="button">Contact Me</button>
@@ -95,14 +97,7 @@
 						<div class = "row realtor-personal-info-item"><img src="./Assets/SVGs/office.svg" alt="Office Image"> Denver office</div>
 						<div class = "row realtor-personal-info-item"><img src="./Assets/SVGs/enewsletter.svg" alt="eNewsLetter Image"> eNewsLetter Sign Up</div>
 					</div>
-
 				</div>
-
-
-
-
-
-
 				<div class = "secondary-navbar-container-container col-xs-12">
 					<div class = "secondary-navbar-container">
 						<nav class="navbar-menu-nav secondary-navbar-menu-nav">
@@ -116,7 +111,7 @@
 								</div>
 								<div class="collapse navbar-collapse" id="secondaryNavbar">
 									<ul class="nav navbar-nav secondary-navbar-nav">
-										<li><a href="#">About Me</a></li>
+										<li class = "about-me-link"><a href="#">About Me</a></li>
 										<li><a href="#">My Listings</a></li>
 										<li><a href="#">My Solds</a></li>
 										<li><a href="#">Testimonials</a></li>
@@ -127,65 +122,64 @@
 					</div>
 				</div>
 				<div class = "container-fluid about-me-container">
-
-						<div class = "about-me-text col-xs-12 col-sm-9">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ad ipsa quos saepe laboriosam voluptatibus, ut, in. In illum itaque, excepturi odit hic nisi nobis laudantium alias mollitia, minus modi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident enim, explicabo aliquid vero amet reiciendis quidem saepe, dolore assumenda, optio officia fugiat error sed asperiores mollitia tenetur rerum. Ea, explicabo?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat natus quibusdam praesentium rerum ullam quod dolorum ex voluptatem voluptatibus magni itaque illum optio beatae, provident quaerat necessitatibus maxime odit cum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti natus est officia autem nemo perferendis dolorem, a, iste provident! Odio esse cupiditate quaerat optio iure quisquam deleniti, suscipit sunt doloremque!
-						</div>
-						<div class = "about-me-languages col-xs-12 col-sm-3">
-							<h2>LANGUAGES</h2>
-							<ul class = "language-ul">
-								<li>Dutch,</li>
-								<li>Finnish,</li>
-								<li>Spanish</li>
-							</ul>
-						</div>
-						<div class = "about-me-designations col-xs-12 col-sm-3">
-							<h2>DESIGNATIONS</h2>
-							<ul class = "language-ul">
-								<li>CRS,</li>
-								<li>GRI,</li>
-								<li>CNE</li>
-							</ul>
-						</div>
+					<div class = "about-me-text col-xs-12 col-sm-9">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ad ipsa quos saepe laboriosam voluptatibus, ut, in. In illum itaque, excepturi odit hic nisi nobis laudantium alias mollitia, minus modi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident enim, explicabo aliquid vero amet reiciendis quidem saepe, dolore assumenda, optio officia fugiat error sed asperiores mollitia tenetur rerum. Ea, explicabo?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat natus quibusdam praesentium rerum ullam quod dolorum ex voluptatem voluptatibus magni itaque illum optio beatae, provident quaerat necessitatibus maxime odit cum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti natus est officia autem nemo perferendis dolorem, a, iste provident! Odio esse cupiditate quaerat optio iure quisquam deleniti, suscipit sunt doloremque!
+					</div>
+					<div class = "about-me-languages col-xs-12 col-sm-3">
+						<h2>LANGUAGES</h2>
+						<ul class = "language-ul">
+							<li>Dutch,</li>
+							<li>Finnish,</li>
+							<li>Spanish</li>
+						</ul>
+					</div>
+					<div class = "about-me-designations col-xs-12 col-sm-3">
+						<h2>DESIGNATIONS</h2>
+						<ul class = "language-ul">
+							<li>CRS,</li>
+							<li>GRI,</li>
+							<li>CNE</li>
+						</ul>
 					</div>
 				</div>
-				<div class="footer">
-					<div class = "container-fluid footer-container-1 col-xs-12 col-sm-6">
-						<div class = "footer-phone-number-row">
-							<div class = "footer-phone-number">1-800-234-4567</div>
-						</div>
-						<div class = "footer-address-row">
-							<div class = "footer-address-">5678 Main Street, Denver, CO 80123</div>
-						</div>
-						<div class = "footer-icon-row">
-							<ul class = "footer-icon-ul">
-								<li class = "footer-icon-item"><img src="./Assets/SVGs/facebook.svg" alt="Facebook Link"></li>
-								<li class = "footer-icon-item"><img src="./Assets/SVGs/linkedin.svg" alt="LinkedIn Link"></li>
-								<li class = "footer-icon-item"><img src="./Assets/SVGs/twitter.svg" alt="Twitter Link"></li>
-								<li class = "footer-icon-item"><img src="./Assets/SVGs/youtube.svg" alt="Youtube Link"></li>
-								<li class = "footer-icon-item"><img src="./Assets/SVGs/instagram.svg" alt="Instagram Link"></li>
-							</ul>
-						</div>
+			</div>
+			<div class="footer">
+				<div class = "container-fluid footer-container-1 col-xs-12 col-sm-6">
+					<div class = "footer-phone-number-row">
+						<div class = "footer-phone-number">1-800-234-4567</div>
 					</div>
-					<div class = "container-fluid footer-container-2 col-xs-12 col-sm-6">
-						<div class = "footer-link-row">
-							<ul class = "footer-link-ul">
-								<li class = "footer-link-item"><a>Site Map</a></li>
-								<li class = "footer-link-item"><a>Terms of Use</a></li>
-								<li class = "footer-link-item"><a>Privacy Policy</a></li>
-							</ul>
-						</div>
-						<div class="footer-copyright-row">
-							<div class="footer-copyright">
-								©2016 TEN Realty. All Rights Reserved.
-							</div>
-						</div>
-						<div class = "footer-container-2-icon-row">
-							<div class = "footer-container-2-icon"><img src="./Assets/SVGs/realtor.svg" alt="Realtor Icon"></div>
-							<div class = "footer-container-2-icon"><img src="./Assets/SVGs/equal-housing.svg" alt="Equal Housing Icon"></div>
-						</div>
+					<div class = "footer-address-row">
+						<div class = "footer-address-">5678 Main Street, Denver, CO 80123</div>
+					</div>
+					<div class = "footer-icon-row">
+						<ul class = "footer-icon-ul">
+							<li class = "footer-icon-item"><img src="./Assets/SVGs/facebook.svg" alt="Facebook Link"></li>
+							<li class = "footer-icon-item"><img src="./Assets/SVGs/linkedin.svg" alt="LinkedIn Link"></li>
+							<li class = "footer-icon-item"><img src="./Assets/SVGs/twitter.svg" alt="Twitter Link"></li>
+							<li class = "footer-icon-item"><img src="./Assets/SVGs/youtube.svg" alt="Youtube Link"></li>
+							<li class = "footer-icon-item"><img src="./Assets/SVGs/instagram.svg" alt="Instagram Link"></li>
+						</ul>
 					</div>
 				</div>
-				</main>
-			</body>
-		</html>
+				<div class = "container-fluid footer-container-2 col-xs-12 col-sm-6">
+					<div class = "footer-link-row">
+						<ul class = "footer-link-ul">
+							<li class = "footer-link-item"><a>Site Map</a></li>
+							<li class = "footer-link-item"><a>Terms of Use</a></li>
+							<li class = "footer-link-item"><a>Privacy Policy</a></li>
+						</ul>
+					</div>
+					<div class="footer-copyright-row">
+						<div class="footer-copyright">
+							©2016 TEN Realty. All Rights Reserved.
+						</div>
+					</div>
+					<div class = "footer-container-2-icon-row">
+						<div class = "footer-container-2-icon"><img src="./Assets/SVGs/realtor.svg" alt="Realtor Icon"></div>
+						<div class = "footer-container-2-icon"><img src="./Assets/SVGs/equal-housing.svg" alt="Equal Housing Icon"></div>
+					</div>
+				</div>
+			</div>
+			</main>
+		</body>
+	</html>

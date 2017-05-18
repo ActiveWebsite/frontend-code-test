@@ -24,7 +24,6 @@ body {
 .navbar-toggle {
   display: flex;
   flex-direction: column;
-  background-color: red;
   justify-content: center;
   align-items: center; }
 
@@ -106,16 +105,26 @@ body {
 .realtor-personal-info-item {
   margin-top: 20px;
   color: #40757A;
-  font-size: 1.1em;
   font-weight: 500; }
 
 .secondary-navbar-toggle {
   background-color: red; }
 
 .secondary-navbar-menu-nav {
-  border: 1px solid black;
+  overflow: hidden;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 10px; }
+  .secondary-navbar-menu-nav li {
+    font-weight: 500;
+    border-bottom: 1px solid grey;
+    font-size: 1.5em; }
+  @media (max-width: 600px) {
+    .secondary-navbar-menu-nav {
+      border: 1px solid black; } }
+
+.about-me-link {
+  border-bottom: 2px solid #3a7378 !important; }
 
 .secondary-navbar-title {
   color: #40757A;
@@ -124,6 +133,9 @@ body {
   display: flex;
   justify-content: space-between;
   width: 70vw; }
+  @media (max-width: 600px) {
+    .secondary-navbar-title {
+      font-size: 18px; } }
 
 .secondary-navbar-nav {
   display: flex;
@@ -146,13 +158,28 @@ body {
   flex-wrap: wrap; }
 
 .footer-container-1 {
-  align-items: center; }
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+  line-height: 2;
+  margin-bottom: 10px; }
+  @media (max-width: 600px) {
+    .footer-container-1 {
+      align-items: center; } }
 
 .footer-container-2 {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center; }
+  align-items: flex-end;
+  margin-top: 20px;
+  line-height: 2;
+  margin-bottom: 10px; }
+  @media (max-width: 600px) {
+    .footer-container-2 {
+      align-items: center; } }
 
 .footer-phone-number-row {
   display: flex;
@@ -165,9 +192,20 @@ body {
 .footer-icon-ul {
   display: flex;
   justify-content: space-between; }
+  .footer-icon-ul li {
+    margin-left: 10px;
+    margin-right: 10px; }
 
 .footer-icon-item {
   display: inline; }
+
+.footer-link-ul {
+  display: flex;
+  justify-content: space-between; }
+  .footer-link-ul li {
+    margin-left: 10px; }
+    .footer-link-ul li a {
+      text-decoration: underline; }
 
 .footer-link-item {
   display: inline; }
@@ -181,5 +219,8 @@ body {
 .footer-container-2-icon {
   margin-left: 10px;
   margin-right: 10px; }
+
+.footer-container-2-icon-row {
+  margin-top: 10px; }
 
 /*# sourceMappingURL=style.css.map */
