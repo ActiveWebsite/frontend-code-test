@@ -58,26 +58,34 @@
 .realtor-personal-info-item {
   margin-top: 20px; }
 
-.custom-dropdown {
-  height: 50px; }
+.mobile-select {
+  text-align-last: center; }
 
-.reviews-navbar-container {
+.footer {
+  background-color: #3a7378;
+  color: white;
   display: flex;
-  justify-content: center; }
+  flex-direction: column;
+  justify-content: space-between; }
 
-.reviews-navbar {
-  background-color: red;
+.footer-container-1 {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
-  border: 10px solid black; }
+  align-items: center; }
 
-.reviews-navbar-item {
-  background-color: white;
-  border: 1px solid black;
-  text-align: center;
-  color: #3a7378;
-  height: 50px; }
+.footer-container-2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+
+.footer-icon-item {
+  display: inline; }
+
+.footer-link-item {
+  display: inline; }
+  .footer-link-item a {
+    color: white; }
 
 /*# sourceMappingURL=style.css.map */
