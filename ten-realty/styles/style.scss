@@ -11,6 +11,9 @@
 
 * { box-sizing: border-box; }
 
+*{
+	border: none;
+}
 
 // colors
 $teal: hsl(185, 35%, 35%);
@@ -23,9 +26,13 @@ $searchbar-height: 50px;
 
 // font-sizes
 // $body-font-size: calc(14px + 2vw);
+$realtor-personal-info-font-size: 1.5em;
+
+$body-font-color: hsl(0, 0%, 26%);
 
 
 body{
+	color: $body-font-color;
 }
 
 .navbar-ul{
@@ -33,6 +40,12 @@ body{
 	justify-content: flex-end;
 	// background-color: orange;
 	align-items: center;
+}
+
+.navbar-nav{
+	a{
+		color: $text-teal;
+	}
 }
 
 .navbar-item{
@@ -78,6 +91,8 @@ body{
 	justify-content: center;
 	background-color: $teal;
 	color: white;
+	border-radius: 0 3px 3px 0;
+
 }
 
 .realtor-image-container{
@@ -96,7 +111,7 @@ body{
 	background-color: $teal;
 	color: white;
 	height: $searchbar-height;
-	// border-radius: 5px;
+	border-radius: 3px;
 }
 
 .social-media-icon-ul{
@@ -129,42 +144,26 @@ body{
 }
 
 
-// .custom-dropdown{
-// 	height: $searchbar-height;
-// }
+.secondary-navbar-toggle{
 
-// .reviews-navbar-container{
-// 	display: flex;
-// 	justify-content: center;
-// }
-// .reviews-navbar{
-// 	// background-color: red;
-// 	// display: flex;
-// 	// justify-content: center;
-// 	// flex-direction: column;
-// 	// align-items: center;
-// 	border: 10px solid black;
-// 	width: 100vw;
-// }
+	background-color: red;
+}
+.secondary-navbar-menu-nav{
+	// background-color: red;
+	border: 1px solid black;
+	display: flex;
+	justify-content: center
+}
 
-// .custom-navbar-ul{
-// 	// background-color: yellow;
-// }
+.secondary-navbar-title{
+	color: $text-teal;
+}
 
-// .first-dropdown-item{
-// 	display: flex;
-// 	flex-direction: column;
-// 	justify-content: center;
-// 	width: 100vw;
-// }
-// .reviews-navbar-item{
-// 	// background-color: blue;
-// 	border: 1px solid black;
-// 	text-align: center;
-// 	color: $teal;
-// 	height: $searchbar-height;
-// }
-
+.secondary-navbar-nav{
+	display: flex;
+	justify-content: space-between;
+	width: 100vw;
+}
 
 .mobile-select { 
 	text-align-last:center; 
