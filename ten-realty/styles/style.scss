@@ -24,6 +24,7 @@ $teal: hsl(185, 35%, 35%);
 $text-teal: #40757A;
 $navbar-background-color: hsl(0, 0%, 67%);
 $realtor-info-background-color: hsl(0, 0%, 93%);
+$footer-color: #4797A3;
 
 // dimensions
 $searchbar-height: 50px;
@@ -47,8 +48,10 @@ body{
 	align-items: center;
 }
 .top-navbar-nav{
-
-
+	a{
+		color: black !important;
+		font-weight: 400;
+	}
 }
 .navbar-nav{
 	
@@ -73,7 +76,7 @@ body{
 }
 
 .icon-bar{
-	background-color: black;
+	background-color: $teal;
 }
 .navbar-logo{
 	margin-right: auto;
@@ -86,6 +89,9 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	box-shadow: 0 10px 15px -10px black;
+	margin-bottom: 20px;
+
 }
 
 .searchbar{
@@ -129,6 +135,13 @@ body{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	.realtor-name{
+		font-family: 'Lato', sans-serif;
+	}
+	.realtor-title{
+		color: lighten(grey, 10);
+		letter-spacing: 2px;
+	}
 }
 
 .realtor-name-and-title-container{
@@ -149,6 +162,7 @@ body{
 	height: $searchbar-height;
 	border-radius: 3px;
 	margin-bottom: 20px;
+	font-size: $realtor-personal-info-font-size;
 }
 
 .social-media-icon-ul{
@@ -171,7 +185,7 @@ body{
 	font-size: $realtor-personal-info-font-size;
 	margin-left: 20px;
 	.realtor-phone-number{
-		color: black;
+		color: darken(grey, 15);
 	}
 	div {
 		margin-bottom: 10px;
@@ -183,7 +197,6 @@ body{
 	color: $text-teal;
 	font-weight: 500;
 }
-
 
 .secondary-navbar-toggle{
 
@@ -199,6 +212,7 @@ body{
 		font-weight: 500;
 		border-bottom: 1px solid grey;
 		font-size: $realtor-personal-info-font-size;
+		a{color: #BBBBBB;}
 	}
 	@media #{$small-screen}{
       border: 1px solid black;
@@ -207,6 +221,9 @@ body{
 
 .about-me-link{
 	border-bottom: 2px solid $teal !important;
+	a{
+		color: $text-teal !important;
+	}
 }
 
 .secondary-navbar-title{
@@ -242,11 +259,19 @@ body{
 .language-ul{
 	li{
 		display: inline;
+		color: darken(grey, 10);
+	}
+}
+
+.designation-ul{
+	li{
+		display: inline;
+		color: darken(grey, 10);
 	}
 }
 
 .footer{
-	background-color: $teal;
+	background-color: $footer-color;
 	color: white;
 	display: flex;
 	flex-wrap: wrap;
@@ -294,8 +319,8 @@ body{
 	display: flex;
 	justify-content: space-between;
 	li{
-		margin-left: 10px;
-		margin-right: 10px;
+
+		margin-right: 20px;
 	}
 }
 
