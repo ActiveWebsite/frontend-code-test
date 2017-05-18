@@ -94,6 +94,9 @@ body{
 	justify-content: center;
 	box-shadow: 0 10px 15px -10px black;
 	margin-bottom: 20px;
+	@media #{$medium-screen}{
+      	justify-content: space-between;
+ 	}
 
 }
 
@@ -109,12 +112,37 @@ body{
 	background-color: $teal;
 	color: white;
 	border-radius: 0 3px 3px 0;
-		@media #{$medium-screen}{
-      display: none;
- 	 }
+	@media #{$medium-screen}{
+      	display: none;
+ 	}
 
 }
 
+.searchbar-submit-button-medium{
+	height: $searchbar-height;
+	display: flex;
+	justify-content: center;
+	background-color: $teal;
+	color: white;
+	font-size: $realtor-personal-info-font-size;
+	border-radius: 3px;
+	@media #{$small-screen}{
+      	display: none;
+ 	 }
+}
+
+.searchbar-row-medium-link{
+	display: inline;
+	text-decoration: underline;
+	margin-left: 5px;
+	margin-right: 5px;
+		a{
+			color: white !important;
+		}
+	@media #{$small-screen}{
+      	display: none;
+ 	 }
+}
 .realtor-image-container{
 	// border: 2px dashed black;
 	img{

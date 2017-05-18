@@ -46,6 +46,9 @@ body {
   justify-content: center;
   box-shadow: 0 10px 15px -10px black;
   margin-bottom: 20px; }
+  @media (min-width: 601px) {
+    .searchbar-row {
+      justify-content: space-between; } }
 
 .searchbar {
   height: 50px;
@@ -60,6 +63,29 @@ body {
   border-radius: 0 3px 3px 0; }
   @media (min-width: 601px) {
     .searchbar-submit-button {
+      display: none; } }
+
+.searchbar-submit-button-medium {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #3a7378;
+  color: white;
+  font-size: 1.5em;
+  border-radius: 3px; }
+  @media (max-width: 600px) {
+    .searchbar-submit-button-medium {
+      display: none; } }
+
+.searchbar-row-medium-link {
+  display: inline;
+  text-decoration: underline;
+  margin-left: 5px;
+  margin-right: 5px; }
+  .searchbar-row-medium-link a {
+    color: white !important; }
+  @media (max-width: 600px) {
+    .searchbar-row-medium-link {
       display: none; } }
 
 .realtor-image-container img {
