@@ -191,7 +191,7 @@ body{
 
 .secondary-navbar-title{
 	color: $text-teal;
-	font-size: 1.5em;
+	font-size: $realtor-personal-info-font-size;
 	font-weight: 500;
 	display: flex;
 	justify-content: space-between;
@@ -205,8 +205,21 @@ body{
 	width: 100vw;
 }
 
-.mobile-select { 
-	text-align-last:center; 
+.about-me-container{
+	// display: flex;
+	// justify-content: center;
+	// color: red;
+	h2{
+		font-size: $realtor-personal-info-font-size;
+	}
+}
+.about-me-text{
+	line-height: 2;
+}
+.language-ul{
+	li{
+		display: inline;
+	}
 }
 
 .footer{

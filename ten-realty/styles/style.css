@@ -130,8 +130,14 @@ body {
   justify-content: space-between;
   width: 100vw; }
 
-.mobile-select {
-  text-align-last: center; }
+.about-me-container h2 {
+  font-size: 1.5em; }
+
+.about-me-text {
+  line-height: 2; }
+
+.language-ul li {
+  display: inline; }
 
 .footer {
   background-color: #3a7378;
