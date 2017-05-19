@@ -28,4 +28,18 @@ $(document).ready(function() {
 		$("#setDims").after(" I have a height of " + targetHeight + " and a width of " + targetWidth + "!")
 	})();
 
+
+	// challenge 5
+	$("#clickEventLink").on('click', toggleLinkClassName)
+
+	function toggleLinkClassName() {
+		if ($(this).hasClass('not-clicked')) {
+			$(this).removeClass('not-clicked')
+			$(this).addClass('clicked')
+		} else {
+			$(this).removeClass('clicked')
+			$(this).addClass('not-clicked')
+		}
+	}
+
 })
