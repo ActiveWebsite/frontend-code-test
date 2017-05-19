@@ -1,4 +1,4 @@
-$(document).ready(function() {
+jQuery(document).ready(function($) {
 
 	var sally = $('li:contains("Sally")');
 	var dropDown = $('select')
@@ -41,5 +41,15 @@ $(document).ready(function() {
 			$(this).addClass('not-clicked')
 		}
 	}
+
+	// challenge 6
+	$.get("ajax_return.html").then(function(data){
+		console.log(data)
+		$("#jsonResponse").append(data)
+});
+
+
+
+
 
 })
