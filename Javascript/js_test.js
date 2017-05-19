@@ -10,13 +10,15 @@ $(document).ready(function() {
 	sally.children().css( "color", "orange" );
 
 	// challenge 3
-	$("select").on("change", function(){
+	$("select").on("change", appendSelected)
+
+	function appendSelected() {
 		var targetText = $( "option:selected" ).text()
 		var $newDiv = $(`<div class = "new-div">${targetText}</div>`)
 		$(".new-div").remove()
-		$('fieldset').append($newDiv)
-	})
-
-
+		if(targetText !=='Choose') {
+			$('fieldset').append($newDiv)
+		}
+	}
 
 })
