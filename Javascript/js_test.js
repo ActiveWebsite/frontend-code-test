@@ -23,8 +23,8 @@ $(document).ready(function() {
 
 	// challenge 4
 	(function runner() {
-		var targetHeight = $("#setDims").height();
-		var targetWidth = $("#setDims").width();
+		var targetHeight = $("#setDims").outerHeight();
+		var targetWidth = $("#setDims").outerWidth();
 		$("#setDims").after(" I have a height of " + targetHeight + " and a width of " + targetWidth + "!")
 	})();
 
