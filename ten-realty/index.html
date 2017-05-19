@@ -25,14 +25,11 @@
 				<ul class = "navbar-ul">
 					<li class = "navbar-item navbar-logo">
 						<picture alt="description of image">
-							<!-- low-res, default -->
-							<source srcset="./Assets/SVGs/TEN-logo-mark.svg">
-							<!-- med-res -->
-							<source srcset="./Assets/SVGs/TEN-logo.svg" media="(min-width: 400px)">
-							<!-- high-res -->
-							<source srcset="./Assets/SVGs/TEN-logo.svg" media="(min-width: 800px)">
-							<!-- Fallback content -->
-							<img src="./Assets/SVGs/TEN-logo-mark.svg" alt="description of image">
+							<picture>
+								<source srcset="./Assets/SVGs/TEN-logo-mark.svg" media="(max-width: 480px)">
+								<source srcset="./Assets/SVGs/TEN-logo.svg" media="(min-width: 481px)">
+								<img srcset="./Assets/SVGs/TEN-logo-mark.svg" alt="My default image">
+							</picture>
 						</picture>
 					</li>
 					<li class = "navbar-item small-screen-only-li"><img src="./Assets/SVGs/contact-teal.svg" alt="Contact Image"><div>Contact</div></li>
