@@ -1,0 +1,441 @@
+// setup
+@import url("reset.css");
+
+* { box-sizing: border-box; }
+
+*{
+	border: none;
+}
+
+// media query
+$small-screen: "(max-width: 600px)";
+$medium-screen: "(min-width: 601px)";
+
+// colors
+$teal: hsl(185, 35%, 35%);
+$text-teal: #40757A;
+$navbar-background-color: hsl(0, 0%, 67%);
+$realtor-info-background-color: hsl(0, 0%, 93%);
+$footer-color: #4797A3;
+$realtor-name-color: lighten(black, 30);
+$body-font-color: #636363;
+
+// dimensions
+$searchbar-height: 50px;
+
+// font-sizes
+$realtor-personal-info-font-size: 1.5em;
+
+
+body{
+	color: $body-font-color;
+}
+
+.top-nav-container{
+	height: 100px;
+	@media #{$small-screen}{
+		height: 80px;
+ 	}
+}
+.medium-screen-contact-and-account-list{
+	@media #{$small-screen}{
+      	display: none;
+ 	}
+	position: absolute;
+	right: 0;
+	margin-top: 10px;
+
+}
+.navbar-ul{
+	display: flex;
+	margin-top: 20px;
+	justify-content: flex-end;
+	align-items: center;
+	@media #{$small-screen}{
+      	margin-top: 0;
+      	margin-bottom: 0;
+ 	}
+}
+
+.small-screen-only-li{
+	@media #{$medium-screen}{
+      	display: none !important;
+      }
+}
+.top-navbar-nav{
+	a{
+		color: black !important;
+		font-weight: 400;
+	}
+}
+.navbar-nav{
+	a{
+		color: $text-teal;
+	}
+}
+
+.navbar-item{
+	display: inline-flex;
+	flex-direction: column;
+	margin-right: 20px;
+	color: lighten(grey, 10);
+	letter-spacing: 2px;
+}
+
+.navbar-toggle{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.icon-bar{
+	background-color: $teal;
+}
+.navbar-logo{
+	margin-right: auto;
+}
+
+.searchbar-row{
+	background-color: $navbar-background-color;
+	display: flex;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 16px 30px -19px black;
+	margin-bottom: 5px;
+	@media #{$medium-screen}{
+      	justify-content: space-between;
+ 	}
+}
+
+.searchbar{
+	height: $searchbar-height;
+	margin-right:0;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+}
+
+.searchbar-submit-button{
+	height: $searchbar-height;
+	display: flex;
+	justify-content: center;
+	background-color: $teal;
+	color: white;
+	border-radius: 0 3px 3px 0;
+	@media #{$medium-screen}{
+      	display: none;
+ 	}
+
+}
+
+.searchbar-submit-button-medium{
+	height: $searchbar-height;
+	display: flex;
+	justify-content: center;
+	background-color: $teal;
+	color: white;
+	font-size: $realtor-personal-info-font-size;
+	border-radius: 3px;
+	margin-right: 90px;
+	@media #{$small-screen}{
+      	display: none;
+ 	 }
+}
+
+.searchbar-row-medium-link-list{
+	margin-bottom: 5px;
+	height: $searchbar-height;
+	display: flex;
+	align-items: center;
+}
+.searchbar-row-medium-link{
+	display: inline;
+	text-decoration: underline;
+	margin-left: 5px;
+	margin-right: 5px;
+		a{
+			color: white !important;
+		}
+	@media #{$small-screen}{
+      	display: none;
+ 	 }
+}
+.realtor-image-container{
+	margin-top: -3px;
+	img{
+		width: 100%;
+		max-height: 400px;
+		max-width: 300px;
+	}
+
+}
+
+.realtor-basic-info-container{
+	background-color: $realtor-info-background-color;
+	// display: flex;
+	// flex-wrap: wrap;
+	width: 100vw;
+	@media #{$medium-screen}{
+		display: inline-flex;
+		flex-wrap: wrap;
+      	justify-content: flex-start;
+      	align-items: center;
+ 	 }
+}
+.realtor-name-title-icon-container{
+		display: flex;
+
+	flex-direction: column;
+	justify-content: center;
+	.realtor-name{
+		font-family: 'Lato', sans-serif;
+		color: $realtor-name-color;
+		margin-bottom: 20px;
+		@media #{$medium-screen}{
+			font-size: calc(#{$realtor-personal-info-font-size} * 2);
+ 		}
+
+	}
+	.realtor-title{
+		color: lighten(grey, 10);
+		letter-spacing: 2px;
+		margin-bottom: 20px;
+	}
+	@media #{$medium-screen}{
+		margin-left: 20px;
+		margin-right: 20px;
+		// padding-top: 4%;
+ 	 }
+}
+
+.contact-realtor-button{
+	background-color: $teal;
+	color: white;
+	height: $searchbar-height;
+	border-radius: 3px;
+	margin-bottom: 20px;
+	font-size: $realtor-personal-info-font-size;
+	letter-spacing: 2px;
+}
+
+.social-media-icon-ul{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+	height: $searchbar-height;
+	align-items: center;
+	li{
+		list-style-type: none; 
+	}
+}
+
+.realtor-personal-info-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: $teal;
+	font-size: $realtor-personal-info-font-size;
+	margin-left: 20px;
+	.realtor-phone-number{
+		color: darken(grey, 15);
+	}
+	div {
+		margin-bottom: 10px;
+	}
+	@media #{$medium-screen}{
+				display: flex;
+	flex-wrap: wrap;
+      	justify-content: flex-start;
+
+
+ 	 }
+}
+
+.realtor-personal-info-item{
+	margin-top: 20px;
+	color: $text-teal;
+	font-weight: 500;
+}
+
+
+.secondary-navbar-menu-nav{
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	margin-bottom: 15px;
+
+	li{
+		font-weight: 500;
+		border-bottom: 1px solid grey;
+		font-size: $realtor-personal-info-font-size;
+		a{
+			color: #BBBBBB;
+		}
+	}
+	@media #{$small-screen}{
+      border: 1px solid lighten(grey, 10);
+ 	 }
+}
+
+.about-me-link{
+	border-bottom: 2px solid $teal !important;
+	a{
+		color: $text-teal !important;
+	}
+}
+
+.secondary-navbar-title{
+	color: $text-teal;
+	font-size: $realtor-personal-info-font-size;
+	font-weight: 500;
+	display: flex;
+	justify-content: space-between;
+	width: 70vw;
+	@media #{$small-screen}{
+      font-size: 18px;
+ 	 }
+}
+
+.secondary-navbar-nav{
+	display: flex;
+	justify-content: space-between;
+	width: 100vw;
+}
+
+.about-me-container{
+	margin-bottom: 50px;
+	h2{
+		font-size: $realtor-personal-info-font-size;
+	}
+}
+
+.about-me-text{
+	line-height: 2;
+	color: $body-font-color;
+	font-weight: 400;
+	font-size: calc(14px + .5vw);
+	@media #{$medium-screen}{
+    	margin-top: 30px;
+ 	}
+}
+
+.about-me-languages{
+	@media #{$medium-screen}{
+    	margin-top: 30px;
+ 	}
+	h2{
+		color: $realtor-name-color;
+	}
+}
+
+.language-ul{
+	li{
+		display: inline;
+		color: darken(grey, 10);
+	}
+}
+
+.about-me-designations{
+	h2{
+		color: $realtor-name-color;
+	}
+}
+
+.designation-ul{
+	li{
+		display: inline;
+		color: darken(grey, 10);
+	}
+}
+
+.footer{
+	background-color: $footer-color;
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	font-family: 'Lato', sans-serif;
+	font-size: calc(14px + .5vw);
+}
+.footer-container-1{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-top: 20px;
+	line-height: 2;
+	margin-bottom: 10px;
+	@media #{$small-screen}{
+      align-items: center;
+  }
+}
+
+.footer-container-2{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: flex-end;
+	margin-top: 20px;
+	line-height: 2;
+	margin-bottom: 10px;
+	 @media #{$small-screen}{
+      align-items: center;
+  }
+}
+.footer-phone-number-row{
+	display: flex;
+	justify-content: center;
+}
+
+.footer-address-row{
+	display: flex;
+	justify-content: center;
+}
+.footer-icon-ul{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+	li{
+		margin-right: 20px;
+	}
+}
+
+.footer-icon-item{
+	display: inline;
+}
+.footer-link-ul{
+	display: flex;
+	justify-content: space-between;
+	li{
+		margin-left: 10px;
+		a{
+			text-decoration: underline;
+		}
+	}
+}
+
+.footer-link-item{
+	display: inline;
+	a{
+		color: white;
+	}
+}
+
+.footer-container-2-icon-row{
+	display: flex;
+	justify-content: center;
+}
+
+.footer-container-2-icon{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.footer-copyright{
+	font-size: 12px;
+}
+.footer-container-2-icon-row{
+	margin-top: 10px;
+}

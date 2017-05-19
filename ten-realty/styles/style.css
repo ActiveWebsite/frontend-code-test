@@ -1,0 +1,347 @@
+@import url("reset.css");
+* {
+  box-sizing: border-box; }
+
+* {
+  border: none; }
+
+body {
+  color: #636363; }
+
+.top-nav-container {
+  height: 100px; }
+  @media (max-width: 600px) {
+    .top-nav-container {
+      height: 80px; } }
+
+.medium-screen-contact-and-account-list {
+  position: absolute;
+  right: 0;
+  margin-top: 10px; }
+  @media (max-width: 600px) {
+    .medium-screen-contact-and-account-list {
+      display: none; } }
+
+.navbar-ul {
+  display: flex;
+  margin-top: 20px;
+  justify-content: flex-end;
+  align-items: center; }
+  @media (max-width: 600px) {
+    .navbar-ul {
+      margin-top: 0;
+      margin-bottom: 0; } }
+
+@media (min-width: 601px) {
+  .small-screen-only-li {
+    display: none !important; } }
+
+.top-navbar-nav a {
+  color: black !important;
+  font-weight: 400; }
+
+.navbar-nav a {
+  color: #40757A; }
+
+.navbar-item {
+  display: inline-flex;
+  flex-direction: column;
+  margin-right: 20px;
+  color: #9a9a9a;
+  letter-spacing: 2px; }
+
+.navbar-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.icon-bar {
+  background-color: #3a7378; }
+
+.navbar-logo {
+  margin-right: auto; }
+
+.searchbar-row {
+  background-color: #ababab;
+  display: flex;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 16px 30px -19px black;
+  margin-bottom: 5px; }
+  @media (min-width: 601px) {
+    .searchbar-row {
+      justify-content: space-between; } }
+
+.searchbar {
+  height: 50px;
+  margin-right: 0;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif; }
+
+.searchbar-submit-button {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #3a7378;
+  color: white;
+  border-radius: 0 3px 3px 0; }
+  @media (min-width: 601px) {
+    .searchbar-submit-button {
+      display: none; } }
+
+.searchbar-submit-button-medium {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #3a7378;
+  color: white;
+  font-size: 1.5em;
+  border-radius: 3px;
+  margin-right: 90px; }
+  @media (max-width: 600px) {
+    .searchbar-submit-button-medium {
+      display: none; } }
+
+.searchbar-row-medium-link-list {
+  margin-bottom: 5px;
+  height: 50px;
+  display: flex;
+  align-items: center; }
+
+.searchbar-row-medium-link {
+  display: inline;
+  text-decoration: underline;
+  margin-left: 5px;
+  margin-right: 5px; }
+  .searchbar-row-medium-link a {
+    color: white !important; }
+  @media (max-width: 600px) {
+    .searchbar-row-medium-link {
+      display: none; } }
+
+.realtor-image-container {
+  margin-top: -3px; }
+  .realtor-image-container img {
+    width: 100%;
+    max-height: 400px;
+    max-width: 300px; }
+
+.realtor-basic-info-container {
+  background-color: #ededed;
+  width: 100vw; }
+  @media (min-width: 601px) {
+    .realtor-basic-info-container {
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center; } }
+
+.realtor-name-title-icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .realtor-name-title-icon-container .realtor-name {
+    font-family: 'Lato', sans-serif;
+    color: #4d4d4d;
+    margin-bottom: 20px; }
+    @media (min-width: 601px) {
+      .realtor-name-title-icon-container .realtor-name {
+        font-size: calc(1.5em * 2); } }
+  .realtor-name-title-icon-container .realtor-title {
+    color: #9a9a9a;
+    letter-spacing: 2px;
+    margin-bottom: 20px; }
+  @media (min-width: 601px) {
+    .realtor-name-title-icon-container {
+      margin-left: 20px;
+      margin-right: 20px; } }
+
+.contact-realtor-button {
+  background-color: #3a7378;
+  color: white;
+  height: 50px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  letter-spacing: 2px; }
+
+.social-media-icon-ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  height: 50px;
+  align-items: center; }
+  .social-media-icon-ul li {
+    list-style-type: none; }
+
+.realtor-personal-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #3a7378;
+  font-size: 1.5em;
+  margin-left: 20px; }
+  .realtor-personal-info-container .realtor-phone-number {
+    color: #5a5a5a; }
+  .realtor-personal-info-container div {
+    margin-bottom: 10px; }
+  @media (min-width: 601px) {
+    .realtor-personal-info-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start; } }
+
+.realtor-personal-info-item {
+  margin-top: 20px;
+  color: #40757A;
+  font-weight: 500; }
+
+.secondary-navbar-menu-nav {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 15px; }
+  .secondary-navbar-menu-nav li {
+    font-weight: 500;
+    border-bottom: 1px solid grey;
+    font-size: 1.5em; }
+    .secondary-navbar-menu-nav li a {
+      color: #BBBBBB; }
+  @media (max-width: 600px) {
+    .secondary-navbar-menu-nav {
+      border: 1px solid #9a9a9a; } }
+
+.about-me-link {
+  border-bottom: 2px solid #3a7378 !important; }
+  .about-me-link a {
+    color: #40757A !important; }
+
+.secondary-navbar-title {
+  color: #40757A;
+  font-size: 1.5em;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  width: 70vw; }
+  @media (max-width: 600px) {
+    .secondary-navbar-title {
+      font-size: 18px; } }
+
+.secondary-navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw; }
+
+.about-me-container {
+  margin-bottom: 50px; }
+  .about-me-container h2 {
+    font-size: 1.5em; }
+
+.about-me-text {
+  line-height: 2;
+  color: #636363;
+  font-weight: 400;
+  font-size: calc(14px + .5vw); }
+  @media (min-width: 601px) {
+    .about-me-text {
+      margin-top: 30px; } }
+
+@media (min-width: 601px) {
+  .about-me-languages {
+    margin-top: 30px; } }
+.about-me-languages h2 {
+  color: #4d4d4d; }
+
+.language-ul li {
+  display: inline;
+  color: #676767; }
+
+.about-me-designations h2 {
+  color: #4d4d4d; }
+
+.designation-ul li {
+  display: inline;
+  color: #676767; }
+
+.footer {
+  background-color: #4797A3;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Lato', sans-serif;
+  font-size: calc(14px + .5vw); }
+
+.footer-container-1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+  line-height: 2;
+  margin-bottom: 10px; }
+  @media (max-width: 600px) {
+    .footer-container-1 {
+      align-items: center; } }
+
+.footer-container-2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 20px;
+  line-height: 2;
+  margin-bottom: 10px; }
+  @media (max-width: 600px) {
+    .footer-container-2 {
+      align-items: center; } }
+
+.footer-phone-number-row {
+  display: flex;
+  justify-content: center; }
+
+.footer-address-row {
+  display: flex;
+  justify-content: center; }
+
+.footer-icon-ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px; }
+  .footer-icon-ul li {
+    margin-right: 20px; }
+
+.footer-icon-item {
+  display: inline; }
+
+.footer-link-ul {
+  display: flex;
+  justify-content: space-between; }
+  .footer-link-ul li {
+    margin-left: 10px; }
+    .footer-link-ul li a {
+      text-decoration: underline; }
+
+.footer-link-item {
+  display: inline; }
+  .footer-link-item a {
+    color: white; }
+
+.footer-container-2-icon-row {
+  display: flex;
+  justify-content: center; }
+
+.footer-container-2-icon {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.footer-copyright {
+  font-size: 12px; }
+
+.footer-container-2-icon-row {
+  margin-top: 10px; }
+
+/*# sourceMappingURL=style.css.map */

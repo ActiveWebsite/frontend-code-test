@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ten Realty</title>
+		<!-- styles -->
+		<link rel="stylesheet" type="text/css" href="./styles/style.css">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<!-- scripts -->
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src ="./scripts/script.js"></script>
+	</head>
+	<body>
+		<ul class = "medium-screen-contact-and-account-list">
+			<li class = "navbar-item"><img src="./Assets/SVGs/contact-teal.svg" alt="Contact Image"><div>Contact</div></li>
+			<li class = "navbar-item"><img src="./Assets/SVGs/account-teal.svg" alt="Account Image"><div>Account</div></li>
+		</ul>
+		<div class="container-fluid navbar-container top-nav-container">
+			<navbar class = "row navbar-row">
+				<ul class = "navbar-ul">
+					<li class = "navbar-item navbar-logo">
+						<picture alt="description of image">
+							<picture>
+								<source srcset="./Assets/SVGs/TEN-logo-mark.svg" media="(max-width: 480px)">
+								<source srcset="./Assets/SVGs/TEN-logo.svg" media="(min-width: 481px)">
+								<img srcset="./Assets/SVGs/TEN-logo-mark.svg" alt="My default image">
+							</picture>
+						</picture>
+					</li>
+					<li class = "navbar-item small-screen-only-li"><img src="./Assets/SVGs/contact-teal.svg" alt="Contact Image"><div>Contact</div></li>
+					<li class = "navbar-item small-screen-only-li"><img src="./Assets/SVGs/account-teal.svg" alt="Account Image"><div>Account</div></li>
+					<li class = "navbar-item navbar-menu-li">
+						<div>
+							<nav class="navbar-menu-nav">
+								<div class="container-fluid">
+									<div class="navbar-header">
+										<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<div class = "menu-title">Menu</div>
+										</button>
+									</div>
+									<div class="collapse navbar-collapse" id="myNavbar">
+										<ul class="nav navbar-nav top-navbar-nav">
+											<li><a href="#">SEARCH</a></li>
+											<li><a href="#">COMMUNITIES</a></li>
+											<li><a href="#">SERVICES</a></li>
+											<li><a href="#">ABOUT US</a></li>
+										</ul>
+									</div>
+								</div>
+							</nav>
+						</div>
+					</li>
+				</ul>
+			</navbar>
+		</div>
+		<main>
+		<div class = "container-fluid searchbar-container">
+			<div class = "row searchbar-row">
+				<input class = "searchbar col-xs-8 col-sm-4" type="text" placeholder="Address, City, Zip, or MLS#">
+				<button type="submit" class="searchbar-submit-button col-xs-3"><img src="./Assets/SVGs/search-white-big.svg" alt="Search"></button>
+				<button type="submit" class="searchbar-submit-button-medium col-xs-3 col-sm-2">Search</button>
+				<ul class ="searchbar-row-medium-link-list">
+					<li class = "searchbar-row-medium-link"><a href="#">NEW LISTINGS</a></li>
+					<li class = "searchbar-row-medium-link"><a href="#">OPEN HOUSES</a></li>
+					<li class = "searchbar-row-medium-link"><a href="#">MAP SEARCH</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class = "container-fluid realtor-basic-info-container">
+			<div class = "realtor-image-container col-xs-9 col-sm-3">
+				<div class = "row image-row">
+					<img src="./Assets/Realtor Image/saramortensun.jpg"  class = "" alt="Realtor Image">
+				</div>
+			</div>
+			<div class= "realtor-name-title-icon-container col-xs-12 col-sm-4">
+				<div class = "realtor-name-and-title-container">
+					<h2 class = "realtor-name">Jane Smith</h2>
+					<p class="realtor-title">REALTOR®</p>
+				</div>
+				<div class = "contact-button-container">
+					<button class = "col-xs-12 contact-realtor-button" type="button">Contact Me</button>
+				</div>
+				<div class = "row social-media-icon-row">
+					<ul class = "social-media-icon-ul col-xs-12">
+						<li><img src="./Assets/SVGs/facebook-grey.svg" alt="Facebook Link"></li>
+						<li><img src="./Assets/SVGs/linkedin-grey.svg" alt="LinkedIn Link"></li>
+						<li><img src="./Assets/SVGs/twitter-grey.svg" alt="Twitter Link"></li>
+						<li><img src="./Assets/SVGs/youtube-grey.svg" alt="Youtube Link"></li>
+						<li><img src="./Assets/SVGs/instagram-grey.svg" alt="Instagram Link"></li>
+					</ul>
+				</div>
+			</div>
+			<div class = "realtor-personal-info-container col-xs-12 col-sm-4">
+				<div class = "row realtor-personal-info-item realtor-phone-number">
+					<img src="./Assets/SVGs/contact-teal-big.svg" alt="Phone Image"> &nbsp  530.830.2150
+				</div>
+				<div class = "row realtor-personal-info-item"><img src="./Assets/SVGs/website-teal.svg" alt="Website Image"> &nbsp Visit my website</div>
+				<div class = "row realtor-personal-info-item"><img src="./Assets/SVGs/office-teal.svg" alt="Office Image"> &nbsp Denver office</div>
+				<div class = "row realtor-personal-info-item"><img src="./Assets/SVGs/enewsletter-teal.svg" alt="eNewsLetter Image"> &nbsp eNewsLetter Sign Up</div>
+			</div>
+		</div>
+		<div class = "secondary-navbar-container-container col-xs-12">
+			<div class = "secondary-navbar-container">
+				<nav class="navbar-menu-nav secondary-navbar-menu-nav">
+					<div class="container-fluid">
+						<div class="navbar-header secondary-navbar-header">
+							<button type="button" class="navbar-toggle secondary-navbar-toggle" data-toggle="collapse" data-target="#secondaryNavbar">
+							<div class = "secondary-navbar-title">
+								<div>About Me</div>
+							<img src="./Assets/SVGs/angle-down.svg" alt=""></div>
+							</button>
+						</div>
+						<div class="collapse navbar-collapse" id="secondaryNavbar">
+							<ul class="nav navbar-nav secondary-navbar-nav">
+								<li class = "about-me-link"><a href="#">About Me</a></li>
+								<li><a href="#">My Listings</a></li>
+								<li><a href="#">My Solds</a></li>
+								<li><a href="#">Testimonials</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<div class = "container-fluid about-me-container">
+			<div class = "about-me-text col-xs-12 col-sm-9">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ad ipsa quos saepe laboriosam voluptatibus, ut, in. In illum itaque, excepturi odit hic nisi nobis laudantium alias mollitia, minus modi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident enim, explicabo aliquid vero amet reiciendis quidem saepe, dolore assumenda, optio officia fugiat error sed asperiores mollitia tenetur rerum. Ea, explicabo?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat natus quibusdam praesentium rerum ullam quod dolorum ex voluptatem voluptatibus magni itaque illum optio beatae, provident quaerat necessitatibus maxime odit cum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti natus est officia autem nemo perferendis dolorem, a, iste provident! Odio esse cupiditate quaerat optio iure quisquam deleniti, suscipit sunt doloremque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum dolorum dolorem asperiores animi vero, eveniet eos suscipit assumenda. Quae molestias nostrum commodi nesciunt magnam ab nemo, sapiente assumenda, corporis fuga!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus nihil nemo esse assumenda placeat cum, sapiente veniam at eos et repudiandae voluptate quo, tempore in velit tempora, eveniet odit eius.
+			</div>
+			<div class = "about-me-languages col-xs-12 col-sm-3">
+				<h2>LANGUAGE</h2>
+				<ul class = "language-ul">
+					<li>Dutch,</li>
+					<li>Finnish,</li>
+					<li>Spanish</li>
+				</ul>
+			</div>
+			<div class = "about-me-designations col-xs-12 col-sm-3">
+				<h2>DESIGNATIONS</h2>
+				<ul class = "language-ul">
+					<li>CRS,</li>
+					<li>GRI,</li>
+					<li>CNE</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class = "container-fluid footer-container-1 col-xs-12 col-sm-6">
+			<div class = "footer-phone-number-row">
+				<div class = "footer-phone-number"><img src="./Assets/SVGs/contact-white.svg" alt="Contact Image"> 1-800-234-4567</div>
+			</div>
+			<div class = "footer-address-row">
+				<div class = "footer-address-">5678 Main Street, Denver, CO 80123</div>
+			</div>
+			<div class = "footer-icon-row">
+				<ul class = "footer-icon-ul">
+					<li class = "footer-icon-item"><img src="./Assets/SVGs/facebook-white.svg" alt="Facebook Link"></li>
+					<li class = "footer-icon-item"><img src="./Assets/SVGs/linkedin-white.svg" alt="LinkedIn Link"></li>
+					<li class = "footer-icon-item"><img src="./Assets/SVGs/twitter-white.svg" alt="Twitter Link"></li>
+					<li class = "footer-icon-item"><img src="./Assets/SVGs/youtube-white.svg" alt="Youtube Link"></li>
+					<li class = "footer-icon-item"><img src="./Assets/SVGs/instagram-white.svg" alt="Instagram Link"></li>
+				</ul>
+			</div>
+		</div>
+		<div class = "container-fluid footer-container-2 col-xs-12 col-sm-6">
+			<div class = "footer-link-row">
+				<ul class = "footer-link-ul">
+					<li class = "footer-link-item"><a>Site Map</a></li>
+					<li class = "footer-link-item"><a>Terms of Use</a></li>
+					<li class = "footer-link-item"><a>Privacy Policy</a></li>
+				</ul>
+			</div>
+			<div class="footer-copyright-row">
+				<div class="footer-copyright">
+					©2016 TEN Realty. All Rights Reserved.
+				</div>
+			</div>
+			<div class = "footer-container-2-icon-row">
+				<div class = "footer-container-2-icon"><img src="./Assets/SVGs/realtor-white.svg" alt="Realtor Icon"></div>
+				<div class = "footer-container-2-icon"><img src="./Assets/SVGs/equal-housing-white.svg" alt="Equal Housing Icon"></div>
+			</div>
+		</div>
+	</div>
+	</main>
+</body>
+</html>
