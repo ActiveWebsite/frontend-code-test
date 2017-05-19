@@ -176,16 +176,17 @@ body{
 	background-color: $realtor-info-background-color;
 	// display: flex;
 	// flex-wrap: wrap;
+	width: 100vw;
 	@media #{$medium-screen}{
-		display: flex;
-	flex-wrap: wrap;
-      	justify-content: space-between;
+		display: inline-flex;
+		flex-wrap: wrap;
+      	justify-content: flex-start;
       	align-items: center;
-
  	 }
 }
 .realtor-name-title-icon-container{
-	display: flex;
+		display: flex;
+
 	flex-direction: column;
 	justify-content: center;
 	.realtor-name{
