@@ -11,7 +11,7 @@ html, body {
   width: 80%;
 }
 
-.noBullet, .menu {
+.no-bullet, .menu {
   list-style: none;
 }
 
@@ -29,7 +29,7 @@ html, body {
   margin: auto 0;
 }
 
-#search-button, .menu {
+#search-button, .menu, .menu a{
   margin: auto;
   color: white;
 }
@@ -37,6 +37,7 @@ html, body {
  #search-text {
    /*margin: auto -20px auto 20px;*/
    color: white;
+   padding: initial;
  }
 
 .search {
@@ -47,18 +48,6 @@ html, body {
 .menu {
   text-decoration: underline;
 }
-
-@media (max-width: 576px) {
-  #search-text, .menu  {
-    display: none; } }
-
-@media (max-width: 768px) {
-  #empty, #empty1  {
-    display: none; } }
-
-@media (min-width: 577px) {
-  #search-button {
-    display: none; } }
 
 #noMargin {
   margin: 0;
@@ -93,15 +82,13 @@ button {
   justify-content: space-between;
   padding: 0;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 button {
   width: 100%;
 }
 
-@media (max-width: 576px) {
-  .realtor-info {
-    padding: 0; } }
 
 .info-container {
   height: 100%;
@@ -126,5 +113,67 @@ button {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
+  padding: 0;
 }
+
+.list-holder ul li {
+  font-size: 18px;
+}
+
+.info-list {
+  height: 100%;
+  width: auto;
+  margin: 10px 10px 10px 0;
+}
+
+/*.list-holder {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+}*/
+
+.list-holder ul {
+  padding: 0;
+}
+
+.list-unstyled span {
+  color: #5C5C5C;
+}
+
+.list-unstyled a {
+  color: #2C99A5;
+}
+
+@media (max-width: 576px) {
+  .realtor-info, .additional-info {
+    padding: 0; } }
+
+
+@media (max-width: 576px) {
+  #search-text, .menu  {
+    display: none; } }
+
+@media (max-width: 576px) {
+  .search  {
+    padding-left: 0; } }
+
+@media (max-width: 768px) {
+  #empty, #empty1  {
+    display: none; } }
+
+@media (max-width: 768px) {
+  .list-unstyled  {
+    font-size: 14px!important; } }
+
+@media (max-width: 992px) {
+  .menu  {
+    font-size: 12px!important; } }
+
+@media (min-width: 577px) {
+  #search-button {
+    display: none; } }
+
+@media (max-width: 768px) and (min-width: 576px) {
+  .info-row h1  {
+    font-size: 2rem!important; } }
