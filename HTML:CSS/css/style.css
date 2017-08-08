@@ -26,7 +26,7 @@ html, body {
   background: #2C99A4;
 }
 #input-form {
-  margin: auto 0;
+  margin: 0;
 }
 
 #search-button, .menu, .menu a{
@@ -128,12 +128,6 @@ button {
   margin: 10px 10px 10px 0;
 }
 
-/*.list-holder {
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
-}*/
-
 .list-holder ul {
   padding: 0;
 }
@@ -146,13 +140,58 @@ button {
   color: #2C99A5;
 }
 
+.nav-link {
+  color: #aaa !important;
+}
+
+.nav-link.active {
+  color: #2C99A5 !important;
+  border: none;
+  border-bottom: 2px solid #2C99A5 !important;
+}
+
+.dropdown-toggle {
+  color: #2C99A5 !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown {
+  margin-top: 25px;
+  padding: 0;
+}
+
+.dropdown-toggle::after {
+  margin-top: 5px;
+}
+
+.tab-pane div {
+  margin: auto;
+  padding: 0;
+}
+
+.dropdown-menu {
+  width: 100%;
+}
+
+#lang-and-certs {
+  margin-top: 0;
+}
+
+.tab-pane h4, .tab-writing {
+  margin-top: 25px !important;
+}
+
+.current-tab {
+  font-size: 18px;
+}
+
 @media (max-width: 575px) {
   .realtor-info, .additional-info {
     padding: 0; } }
 
-
 @media (max-width: 575px) {
-  #search-text, .menu  {
+  #search-text, .menu, .xs-hide  {
     display: none; } }
 
 @media (max-width: 575px) {
@@ -160,7 +199,7 @@ button {
     padding-left: 0; } }
 
 @media (max-width: 767px) {
-  #empty, #empty1  {
+  #empty, #empty1, #empty2  {
     display: none; } }
 
 @media (max-width: 768px) {
@@ -172,7 +211,7 @@ button {
     font-size: 12px!important; } }
 
 @media (min-width: 576px) {
-  #search-button {
+  #search-button, .xs-show {
     display: none; } }
 
 @media (max-width: 768px) and (min-width: 576px) {
