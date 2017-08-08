@@ -1,0 +1,58 @@
+html{
+  font-size: .9rem;
+}
+
+.tenLogo {
+  width: 20%;
+}
+
+.eighty {
+  width: 80%;
+}
+
+.noBullet, .menu {
+  list-style: none;
+}
+
+.searchBar {
+  background: #AAAAAA;
+}
+
+.teal {
+  background: #2C99A4;
+}
+#inputForm {
+  /*margin: auto;*/
+}
+
+#searchButton, #searchText, .menu {
+  margin: auto;
+  color: white;
+}
+
+.menu {
+  text-decoration: underline;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+@media (max-width: 576px) {
+  #searchText, .empty, .menu  {
+    display: none; } }
+
+@media (min-width: 577px) {
+  #searchButton {
+    display: none; } }
+
+#noMargin {
+  margin: 0;
+}
+
+.hundred {
+  width: 100%;
+  margin: auto;
+}
