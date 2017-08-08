@@ -1,5 +1,6 @@
-html{
-  font-size: .8rem;
+html, body {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
 }
 
 .tenLogo {
@@ -17,6 +18,8 @@ html{
 .search-bar {
   width: 100%;
   background: #AAAAAA;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .teal {
@@ -99,3 +102,29 @@ button {
 @media (max-width: 576px) {
   .realtor-info {
     padding: 0; } }
+
+.info-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-row {
+  margin-top: 15px;
+}
+
+.info-row h1 {
+  color: #323232;
+}
+
+.info-row p {
+  color: #858585;
+}
+
+.additional-info-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
