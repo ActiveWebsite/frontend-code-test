@@ -11,16 +11,37 @@
 
 <body>
 
+  <div class="search-bar">
+    <div class="container">
+      <div class="row hundred">
+        <input type="text" class="col-9 col-sm-4 col-md-3" id="input-form" placeholder="Address, City, Zip, or MLS#">
+        <span class="col-3 col-sm-2 col-md-2 search">
+          <button type="button" class="btn btn-default teal" id="search-button"><img src="./Assets/SVGs/search.svg" alt=""></button>
+          <button type="button" class="btn btn-default teal" id="search-text">Search</button>
+        </span>
+        <div class="empty col-md-1"></div>
+        <a class="menu col-sm-2" href="#">New Listing</a>
+        <a class="menu col-sm-2" href="#">Open Houses</a>
+        <a class="menu col-sm-2" href="#">Map Search</a>
+      </div>
+    </div>
+  </div>
 
-  <div class="searchBar container-fluid">
+
+  <div class="container">
     <div class="row hundred">
-      <input type="text" class="form-control col-9 col-sm-3" id="inputForm" placeholder="Address, City, Zip, or MLS#">
-      <button type="button" class="btn btn-default teal col" id="searchButton"><img src="./Assets/SVGs/search.svg" alt=""></button>
-      <button type="button" class="btn btn-default teal col-sm-2" id="searchText">Search</button>
-      <div class="empty col-sm-1"></div>
-      <a class="menu col-sm-2" href="#">New Listing</a>
-      <a class="menu col-sm-2" href="#">Open Houses</a>
-      <a class="menu col-sm-2" href="#">Map Search</a>
+      <div class="image col-9 col-sm-3" id="sara">
+        <img src="./Assets/Realtor Image/saramortensun.jpg" alt="Realtor Image" class="" id="realtor-image">
+      </div>
+      <div class="col-12 col-sm-4 col-md-3" style="background:blue">
+        <div class="name-title">
+          <h2>Jane Smith</h2><br>
+          <p>REALTOR®</p>
+        </div>
+        <button type="button" class="btn btn-default teal col-12 col-md-9">
+          Contact Me
+        </button>
+      </div>
     </div>
   </div>
 
@@ -30,3 +51,9 @@
 </body>
 
 </html>
+<!-- <form class="form-inline col-12 col-sm-6">
+  <input type="text" class="col-9 col-sm-8 col-md-6" id="input-form" placeholder="Address, City, Zip, or MLS#">
+  <button type="button" class="btn btn-default teal col-3 col-sm-4" id="search-button"><img src="./Assets/SVGs/search.svg" alt=""></button>
+  <button type="button" class="btn btn-default teal col-3 col-sm-4" id="search-text">Search</button>
+  <div class="empty col-md-1"></div>
+</form> -->
