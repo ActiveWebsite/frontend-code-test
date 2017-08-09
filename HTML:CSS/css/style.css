@@ -42,6 +42,7 @@ html, body {
  #search-text {
    color: white;
    padding: initial;
+   margin-left: 25%;
  }
 
 .search {
@@ -174,6 +175,12 @@ button {
   color: #aaa !important;
 }
 
+.full-nav {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: .1em;
+}
+
 .nav-link.active {
   color: #2C99A5 !important;
   border: none;
@@ -185,7 +192,7 @@ button {
   display: flex;
   justify-content: space-between;
   border: 1px solid #aaa;
-  padding-left: 5px;
+  padding-left: 15px;
   padding-right: 5px;
 }
 
@@ -264,22 +271,40 @@ button {
   justify-content: flex-end;
 }
 
-.centerXY {
+.centerXY, .logo-holder {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+}
+
+.centerXY {
+  align-items: center;
 }
 
 .centerXY div{
   color: #5c5c5c;
 }
 
-#header, #fluid-header {
-  padding: 10px;
+#header {
+  padding-left: 15px;
+}
+
+.bottom-40 {
+  margin-bottom: 40px;
+}
+
+#fluid-header {
+  padding-left: 5em;
+  padding-right: 0em;
 }
 
 .right-menu-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.right-menu-list {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -297,6 +322,16 @@ button {
 .fa-bars {
   height: 16px;
   width: 16px;
+}
+
+.side-items {
+  margin-left: 3em;
+  color: black !important;
+}
+
+picture img {
+  height: auto;
+  width: 100%;
 }
 
 @media (max-width: 575px) {
@@ -352,5 +387,40 @@ button {
 @media (max-width: 992px) and (min-width: 576px) {
   .phone, .address, .copyright, .site-links {
     font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  .social2  {
+    margin-bottom: 15px;
+  }
+  .phone, .address, .copyright, .site-links {
+  font-size: 14px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .right-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 768px) {
+  .info-row {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .full-nav {
+    font-size: 16px;
+  }
+  .menu a, .site-links, .phone, .address, .copyright {
+    font-size: 8px;
+  }
+  .site-links {
+    font-size: 8px;
   }
 }
