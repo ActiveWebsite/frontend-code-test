@@ -6,11 +6,77 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+
+  <header>
+    <!-- header on medium and up -->
+    <div class="container-fluid" id="fluid-header" style="background:#fff;">
+      <div class="row">
+        <div class="logo-holder col-md-4 col-lg-3">
+          <picture>
+            <source media="(min-width: 576px)" srcset="./Assets/SVGs/TEN-logo.svg" />
+            <img src="./Assets/SVGs/TEN-logo-mark.svg" alt="Logo" class="logo" />
+          </picture>
+        </div>
+      </div>
+    </div>
+    <!-- header on small -->
+    <div class="container" id="header">
+      <div class="row hundred">
+        <div class="logo-holder col-3 col-sm-3">
+          <picture>
+            <source media="(min-width: 576px)" srcset="./Assets/SVGs/TEN-logo.svg" />
+            <img src="./Assets/SVGs/TEN-logo-mark.svg" alt="Logo" class="full-height" />
+          </picture>
+        </div>
+        <div class="right-menu col-9 col-sm-9">
+          <ul class="right-menu-icons full-height">
+            <li class="list-unstyled full-height">
+              <a href="#!" class="centerXY full-height">
+                <img src="./Assets/SVGs/contact1.svg" alt="Contact" class="">
+                <div class="">
+                  Contact
+                </div>
+              </a>
+            </li>
+            <li class="list-unstyled full-height">
+              <a href="#!" class="centerXY full-height">
+                <img src="./Assets/SVGs/account.svg" alt="Account" class="">
+                <div class="">
+                  Account
+                </div>
+              </a>
+            </li>
+            <li class="list-unstyled full-height dropdown1">
+              <a href="#!" class="dropdown-toggle1 centerXY full-height" data-toggle="dropdown"><i class="fa fa-bars fa-2" aria-hidden="true"></i><div class="">
+                  Menu
+                </div></a>
+              <ul class="dropdown-menu top-menu">
+                <li class="nav-item">
+                  <a class="nav-link search1" href="#search1" role="tab">Search</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link communities" data-toggle="tab" href="#communities" role="tab">Communities</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link services" data-toggle="tab" href="#services" role="tab">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link aboutUs" data-toggle="tab" href="#aboutUs" role="tab">About Us</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </header>
 
   <div class="search-bar">
     <div class="container">

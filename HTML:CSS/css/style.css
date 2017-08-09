@@ -48,6 +48,7 @@ html, body {
   display: flex;
   justify-content: center;
   width: 100%;
+  padding: 0;
 }
 
 .phone, .address {
@@ -252,6 +253,52 @@ button {
   padding-right: 0;
 }
 
+.logo-holder {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.right-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.centerXY {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.centerXY div{
+  color: #5c5c5c;
+}
+
+#header, #fluid-header {
+  padding: 10px;
+}
+
+.right-menu-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.full-height {
+  height: 100%;
+  width: auto;
+}
+
+.full-height li {
+  margin-left: 30px;
+}
+
+.fa-bars {
+  height: 16px;
+  width: 16px;
+}
+
 @media (max-width: 575px) {
   .realtor-info, .additional-info {
     padding: 0; } }
@@ -264,11 +311,15 @@ button {
   .search  {
     padding-left: 0; } }
 
-@media (max-width: 767px) {
-  #empty, #empty1, #empty2  {
+@media (min-width: 768px) {
+  #header  {
     display: none; } }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  #empty, #empty1, #empty2, #fluid-header  {
+    display: none; } }
+
+@media (max-width: 767px) {
   .list-unstyled  {
     font-size: 14px!important; } }
 
@@ -294,7 +345,7 @@ button {
     justify-content: center; }
 }
 
-@media (max-width: 768px) and (min-width: 576px) {
+@media (max-width: 767px) and (min-width: 576px) {
   .info-row h1  {
     font-size: 2rem!important; } }
 
