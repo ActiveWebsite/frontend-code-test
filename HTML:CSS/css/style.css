@@ -25,11 +25,16 @@ html, body {
 .teal {
   background: #2C99A4;
 }
+
+.realtor-background {
+  background: #EEEEEE;
+}
+
 #input-form {
   margin: 0;
 }
 
-#search-button, .menu, .menu a{
+#search-button, .menu, .menu a {
   margin: auto;
   color: white;
 }
@@ -41,11 +46,18 @@ html, body {
 
 .search {
   display: flex;
+  justify-content: center;
   width: 100%;
 }
 
-.menu {
+.phone, .address {
+  font-size: 18px;
+  letter-spacing: .05em;
+}
+
+.menu, .site-links {
   text-decoration: underline;
+  color: white;
 }
 
 #contact-button {
@@ -70,7 +82,7 @@ html, body {
   padding: 0;
 }
 
-button {
+button, .phone, .address, .copyright {
   color: white;
 }
 
@@ -86,10 +98,18 @@ button {
   margin-bottom: 10px;
 }
 
+.social2 {
+  display: flex;
+  justify-content: space-between;
+}
+
 button {
   width: 100%;
 }
 
+.phone img {
+  margin-right: 5px;
+}
 
 .info-container {
   height: 100%;
@@ -118,8 +138,17 @@ button {
   padding: 0;
 }
 
-.list-holder ul li {
+.list-holder ul li, .site-links {
   font-size: 18px;
+}
+
+.copyright {
+  font-size: 16px;
+}
+
+.realtor-equal img {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .info-list {
@@ -132,7 +161,7 @@ button {
   padding: 0;
 }
 
-.list-unstyled span {
+.list-unstyled  {
   color: #5C5C5C;
 }
 
@@ -154,6 +183,9 @@ button {
   color: #2C99A5 !important;
   display: flex;
   justify-content: space-between;
+  border: 1px solid #aaa;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .dropdown {
@@ -162,7 +194,7 @@ button {
 }
 
 .dropdown-toggle::after {
-  margin-top: 5px;
+  display: none;
 }
 
 .tab-pane div {
@@ -184,6 +216,40 @@ button {
 
 .current-tab {
   font-size: 18px;
+}
+
+.site-links {
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+}
+
+#site-link, .copyright, .realtor-equal {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#site-link {
+  margin-bottom: 13px;
+}
+
+.copyright {
+  margin-bottom: 10px;
+}
+
+.realtor-equal, .social2 {
+  margin-bottom: 0;
+}
+
+.phone, .address {
+  margin-bottom: .5rem;
+}
+
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @media (max-width: 575px) {
@@ -214,6 +280,26 @@ button {
   #search-button, .xs-show {
     display: none; } }
 
+@media (max-width: 576px) {
+  #site-link {
+    padding: 0;
+    display: flex;
+    justify-content: space-between; }
+}
+
+@media (max-width: 576px) {
+  .copyright, .phone, .address, .realtor-equal  {
+    padding: 0;
+    display: flex;
+    justify-content: center; }
+}
+
 @media (max-width: 768px) and (min-width: 576px) {
   .info-row h1  {
     font-size: 2rem!important; } }
+
+@media (max-width: 992px) and (min-width: 576px) {
+  .phone, .address, .copyright, .site-links {
+    font-size: 13px;
+  }
+}
