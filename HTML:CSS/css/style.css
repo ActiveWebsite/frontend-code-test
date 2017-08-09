@@ -1,0 +1,426 @@
+html, body {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+}
+
+.tenLogo {
+  width: 20%;
+}
+
+.eighty {
+  width: 80%;
+}
+
+.no-bullet, .menu {
+  list-style: none;
+}
+
+.search-bar {
+  width: 100%;
+  background: #AAAAAA;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.teal {
+  background: #2C99A4;
+}
+
+.realtor-background {
+  background: #EEEEEE;
+}
+
+#input-form {
+  margin: 0;
+}
+
+#search-button, .menu, .menu a {
+  margin: auto;
+  color: white;
+}
+
+ #search-text {
+   color: white;
+   padding: initial;
+   margin-left: 25%;
+ }
+
+.search {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+}
+
+.phone, .address {
+  font-size: 18px;
+  letter-spacing: .05em;
+}
+
+.menu, .site-links {
+  text-decoration: underline;
+  color: white;
+}
+
+#contact-button {
+  font-size: 18px;
+  letter-spacing: .05em;
+  font-weight: 500;
+}
+
+.hundred {
+  width: 100%;
+  margin: auto;
+}
+
+#realtor-image {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+#sara {
+  padding: 0;
+}
+
+button, .phone, .address, .copyright {
+  color: white;
+}
+
+.sm {
+  margin-top: 10px;
+}
+
+.social  {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.social2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  width: 100%;
+}
+
+.phone img {
+  margin-right: 5px;
+}
+
+.info-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-row {
+  margin-top: 15px;
+}
+
+.info-row h1 {
+  color: #323232;
+}
+
+.info-row p {
+  color: #858585;
+}
+
+.additional-info-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.list-holder ul li, .site-links {
+  font-size: 18px;
+}
+
+.copyright {
+  font-size: 16px;
+}
+
+.realtor-equal img {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.info-list {
+  height: 100%;
+  width: auto;
+  margin: 10px 10px 10px 0;
+}
+
+.list-holder ul {
+  padding: 0;
+}
+
+.list-unstyled  {
+  color: #5C5C5C;
+}
+
+.list-unstyled a {
+  color: #2C99A5;
+}
+
+.nav-link {
+  color: #aaa !important;
+}
+
+.full-nav {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: .1em;
+}
+
+.nav-link.active {
+  color: #2C99A5 !important;
+  border: none;
+  border-bottom: 2px solid #2C99A5 !important;
+}
+
+.dropdown-toggle {
+  color: #2C99A5 !important;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #aaa;
+  padding-left: 15px;
+  padding-right: 5px;
+}
+
+.dropdown {
+  margin-top: 25px;
+  padding: 0;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.tab-pane div {
+  margin: auto;
+  padding: 0;
+}
+
+.dropdown-menu {
+  width: 100%;
+}
+
+#lang-and-certs {
+  margin-top: 0;
+}
+
+.tab-pane h4, .tab-writing {
+  margin-top: 25px !important;
+}
+
+.current-tab {
+  font-size: 18px;
+}
+
+.site-links {
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+}
+
+#site-link, .copyright, .realtor-equal {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#site-link {
+  margin-bottom: 13px;
+}
+
+.copyright {
+  margin-bottom: 10px;
+}
+
+.realtor-equal, .social2 {
+  margin-bottom: 0;
+}
+
+.phone, .address {
+  margin-bottom: .5rem;
+}
+
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.logo-holder {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.right-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.centerXY, .logo-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.centerXY {
+  align-items: center;
+}
+
+.centerXY div{
+  color: #5c5c5c;
+}
+
+#header {
+  padding-left: 15px;
+}
+
+.bottom-40 {
+  margin-bottom: 40px;
+}
+
+#fluid-header {
+  padding-left: 5em;
+  padding-right: 0em;
+}
+
+.right-menu-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.right-menu-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.full-height {
+  height: 100%;
+  width: auto;
+}
+
+.full-height li {
+  margin-left: 30px;
+}
+
+.fa-bars {
+  height: 16px;
+  width: 16px;
+}
+
+.side-items {
+  margin-left: 3em;
+  color: black !important;
+}
+
+picture img {
+  height: auto;
+  width: 100%;
+}
+
+@media (max-width: 575px) {
+  .realtor-info, .additional-info {
+    padding: 0; } }
+
+@media (max-width: 575px) {
+  #search-text, .menu, .xs-hide  {
+    display: none; } }
+
+@media (max-width: 575px) {
+  .search  {
+    padding-left: 0; } }
+
+@media (min-width: 768px) {
+  #header  {
+    display: none; } }
+
+@media (max-width: 767px) {
+  #empty, #empty1, #empty2, #fluid-header  {
+    display: none; } }
+
+@media (max-width: 767px) {
+  .list-unstyled  {
+    font-size: 14px!important; } }
+
+@media (max-width: 991px) {
+  .menu  {
+    font-size: 12px!important; } }
+
+@media (min-width: 576px) {
+  #search-button, .xs-show {
+    display: none; } }
+
+@media (max-width: 576px) {
+  #site-link {
+    padding: 0;
+    display: flex;
+    justify-content: space-between; }
+}
+
+@media (max-width: 576px) {
+  .copyright, .phone, .address, .realtor-equal  {
+    padding: 0;
+    display: flex;
+    justify-content: center; }
+}
+
+@media (max-width: 767px) and (min-width: 576px) {
+  .info-row h1  {
+    font-size: 2rem!important; } }
+
+@media (max-width: 992px) and (min-width: 576px) {
+  .phone, .address, .copyright, .site-links {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  .social2  {
+    margin-bottom: 15px;
+  }
+  .phone, .address, .copyright, .site-links {
+  font-size: 14px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .right-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 768px) {
+  .info-row {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .full-nav {
+    font-size: 16px;
+  }
+  .menu a, .site-links, .phone, .address, .copyright {
+    font-size: 8px;
+  }
+  .site-links {
+    font-size: 8px;
+  }
+}

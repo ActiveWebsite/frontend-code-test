@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Booj Realtor</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="shortcut icon" href="./Assets/Favicon/favicon.ico" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <!-- header on medium and up -->
+    <div class="container-fluid" id="fluid-header" style="background:#fff;">
+      <div class="row">
+        <div class="logo-holder col-md-4 col-lg-3">
+          <a href="#">
+            <picture>
+              <source media="(min-width: 576px)" srcset="./Assets/SVGs/TEN-logo.svg" />
+              <img src="./Assets/SVGs/TEN-logo-mark.svg" alt="Logo" class="logo" />
+            </picture>
+          </a>
+        </div>
+        <div class="right-menu col-md-8">
+          <div class="row">
+            <div class="col-12">
+              <ul class="right-menu-icons full-height">
+                <li class="list-unstyled full-height">
+                  <a href="#!" class="centerXY full-height">
+                    <img src="./Assets/SVGs/contact1.svg" alt="Contact" class="">
+                    <div class="">
+                      Contact
+                    </div>
+                  </a>
+                </li>
+                <li class="list-unstyled full-height">
+                  <a href="#!" class="centerXY full-height">
+                    <img src="./Assets/SVGs/account.svg" alt="Account" class="">
+                    <div class="">
+                      Account
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <ul class="col-12 right-menu-list">
+              <li class="list-unstyled"><a class="side-items" href="#search1">SEARCH</a></li>
+              <li class="list-unstyled"><a class="side-items" href="#communities">COMMUNITIES</a></li>
+              <li class="list-unstyled"><a class="side-items" href="#services">SERVICES</a></li>
+              <li class="list-unstyled"><a class="side-items" href="#aboutUs">ABOUT US</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header on small -->
+    <div class="container" id="header">
+      <div class="row hundred">
+        <div class="logo-holder col-3 col-sm-3">
+          <a href="#">
+            <picture>
+              <source media="(min-width: 576px)" srcset="./Assets/SVGs/TEN-logo.svg" />
+              <img src="./Assets/SVGs/TEN-logo-mark.svg" alt="Logo" class="full-height" />
+            </picture>
+          </a>
+        </div>
+        <div class="right-menu col-9 col-sm-9">
+          <ul class="right-menu-icons full-height">
+            <li class="list-unstyled full-height">
+              <a href="#!" class="centerXY full-height">
+                <img src="./Assets/SVGs/contact1.svg" alt="Contact" class="">
+                <div class="">
+                  Contact
+                </div>
+              </a>
+            </li>
+            <li class="list-unstyled full-height">
+              <a href="#!" class="centerXY full-height">
+                <img src="./Assets/SVGs/account.svg" alt="Account" class="">
+                <div class="">
+                  Account
+                </div>
+              </a>
+            </li>
+            <li class="list-unstyled full-height dropdown1">
+              <a href="#!" class="dropdown-toggle1 centerXY full-height" data-toggle="dropdown"><i class="fa fa-bars fa-2" aria-hidden="true"></i><div class="">
+                  Menu
+                </div></a>
+              <ul class="dropdown-menu top-menu">
+                <li class="nav-item">
+                  <a class="nav-link search1" href="#search1" role="tab">Search</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link communities" data-toggle="tab" href="#communities" role="tab">Communities</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link services" data-toggle="tab" href="#services" role="tab">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link aboutUs" data-toggle="tab" href="#aboutUs" role="tab">About Us</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <div class="search-bar">
+    <div class="container">
+      <div class="row hundred">
+        <input type="text" class="col-9 col-sm-4 col-md-3" id="input-form" placeholder="Address, City, Zip, or MLS#">
+        <span class="col-3 col-sm-2 col-md-2 search">
+          <button type="button" class="btn btn-default teal" id="search-button"><img src="./Assets/SVGs/search.svg" alt=""></button>
+          <button type="button" class="btn btn-default teal" id="search-text">Search</button>
+        </span>
+        <div class="col-md-1" id="empty"></div>
+        <h6 class="menu col-sm-2"><a href="#!">NEW LISTING</a></h6>
+        <h6 class="menu col-sm-2"><a href="#!">OPEN HOUSES</a></h6>
+        <h6 class="menu col-sm-2"><a href="#!">MAP SEARCH</a></h6>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="realtor-background bottom-40" style="">
+    <div class="container">
+      <div class="row hundred">
+        <div class="image col-9 col-sm-3" id="sara">
+          <img src="./Assets/Realtor Image/saramortensun.jpg" alt="Realtor Image" class="" id="realtor-image">
+        </div>
+        <div class="col-md-1" id="empty1"></div>
+        <div class="realtor-info col-12 col-sm-4 col-md-4">
+          <div class="container info-container">
+            <div class="row info-row">
+              <h1>Jane Smith</h1>
+            </div>
+            <div class="row info-row">
+              <p>REALTOR®</p>
+            </div>
+            <div class="row info-row">
+              <button type="button" class="btn btn-default teal col-12 col-md-9" id="contact-button">Contact Me</button>
+            </div>
+            <div class="row info-row">
+              <div class="social col-12 col-md-9">
+                <a class="social-media" href="#!"><img src="./Assets/SVGs/facebook.svg" alt="Facebook"></a>
+                <a class="social-media" href="#!"><img src="./Assets/SVGs/linkedin.svg" alt="LinkedIn"></a>
+                <a class="social-media" href="#!"><img src="./Assets/SVGs/twitter.svg" alt="Twitter"></a>
+                <a class="social-media" href="#!"><img src="./Assets/SVGs/youtube.svg" alt="Youtube"></a>
+                <a class="social-media" href="#!"><img src="./Assets/SVGs/instagram.svg" alt="Instagram"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="additional-info col-12 col-sm-5 col-md-4">
+          <div class="additional-info-container container">
+            <div class="list-holder">
+              <ul>
+                <li class="list-unstyled">
+                  <img class="info-list" src="./Assets/SVGs/contact.svg" alt="">
+                  <span>530.830.2150</span>
+                </li>
+                <li class="list-unstyled">
+                  <img class="info-list" src="./Assets/SVGs/website.svg" alt="">
+                  <a href="#!">Visit my website</a>
+                </li>
+                <li class="list-unstyled">
+                  <img class="info-list" src="./Assets/SVGs/office.svg" alt="">
+                  <a href="#!">Denver office</a>
+                </li>
+                <li class="list-unstyled">
+                  <img class="info-list" src="./Assets/SVGs/enewsletter.svg" alt="">
+                  <a href="#!">eNewsletter Sign Up</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- start tabs -->
+  <div class="container tabs-container">
+
+    <!-- normal tabs -->
+    <ul class="nav nav-tabs nav-fill xs-hide" role="tablist">
+      <li class="nav-item">
+        <a class="full-nav nav-link active about" data-toggle="tab" href="#about" role="tab">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="full-nav nav-link listings" data-toggle="tab" href="#listings" role="tab">My Listings</a>
+      </li>
+      <li class="nav-item">
+        <a class="full-nav nav-link solds" data-toggle="tab" href="#solds" role="tab">My Solds</a>
+      </li>
+      <li class="nav-item">
+        <a class="full-nav nav-link testimonials" data-toggle="tab" href="#testimonials" role="tab">Testimonials</a>
+      </li>
+    </ul>
+
+    <!-- drop down tabs on small -->
+    <ul class="nav nav-tabs nav-fill xs-show">
+      <li class="dropdown col-12">
+        <a href="#!" class="dropdown-toggle current-tab" data-toggle="dropdown">About Me<img src="./Assets/SVGs/angle-down.svg" alt=""></a>
+        <ul class="dropdown-menu">
+          <li class="nav-item">
+            <a class="nav-link active about" data-toggle="tab" href="#about" role="tab">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link listings" data-toggle="tab" href="#listings" role="tab">My Listings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link solds" data-toggle="tab" href="#solds" role="tab">My Solds</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link testimonials" data-toggle="tab" href="#testimonials" role="tab">Testimonials</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="tab-content">
+      <div class="tab-pane active" id="about" role="tabpanel">
+        <div class="row">
+          <div class="tab-writing col-12 col-sm-9 col-md-8">
+            Lorem ipsum dolor sit amet dui sit sapien sem auctor nec elit. Mauris libero nunc malesuada porta netus. Ultrices sit id lorem tortor elementum purus primis quis aliquet augue vestibulum. In enim nec. At tempor consectetuer. Non magna vel. Fames amet
+            feugiat. Tempor vel laoreet lectus ut ut mi vestibulum donec. Mauris mauris nunc donec at blandit. Sem et pede cursus quis accumsan. Diam in turpis curabitur enim porttitor. Lectus parturient ipsum. Lobortis dolor massa. Orci nibh nec hac
+            suspendisse non. Enim velit sed. Aliquam felis dolor. Urna pellentesque risus lacinia aliquam at et erat urna vel nullam accumsan sem.
+            <br>
+            <br> Proin vel dignissim urna. Curabitur sit amet nulla non metus posuere porta. Nulla magna mauris, sollicitudin eu velit at, fermentum rhoncus est. In sagittis neque non commodo pharetra. Pellentesque venenatis interdum nisi id volutpat.
+            Vivamus auctor mi nibh, eu dapibus velit tempus maximus. In at semper quam. Etiam vehicula maximus viverra. Proin at est a nibh egestas congue.
+            <br><br> Nam consectetur lectus magna, non scelerisque elit interdum eu. Morbi ligula arcu, vestibulum nec tortor sit amet, venenatis pharetra mi. Curabitur vitae lorem scelerisque, mattis nisl in, malesuada libero. Cras vitae neque quis tellus
+            feugiat fringilla. Fusce vel tincidunt est. Ut vitae turpis lacinia, porta ex venenatis, imperdiet justo. Donec consequat nulla vel augue mollis gravida.
+          </div>
+          <div class="col-md-1" id="empty2"></div>
+          <div class="col-12 col-sm-3 col-md-3" id="lang-and-certs">
+            <h4>LANGUAGES</h4>
+            <p>Dutch, Finnish, Spanish</p>
+            <h4>DESIGNATIONS</h4>
+            <p>CRS, GRI, CNE</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="tab-writing tab-pane" id="listings" role="tabpanel">Bacon ipsum dolor amet hamburger porchetta culpa sunt commodo duis ut fatback tongue. Lorem qui shoulder, occaecat deserunt irure dolor fatback fugiat. Hamburger fugiat incididunt salami, sirloin bresaola enim veniam quis ipsum jowl spare ribs.
+        Ground round jowl salami esse meatball aute beef ribs frankfurter meatloaf aliqua do corned beef magna sint. In enim alcatra, pariatur eu filet mignon occaecat cupim salami dolor sunt velit incididunt shoulder.</div>
+      <div class="tab-writing tab-pane" id="solds" role="tabpanel">Hodor hodor - hodor... Hodor hodor hodor - hodor. Hodor. Hodor. Hodor hodor... Hodor hodor hodor, hodor, hodor hodor. Hodor! Hodor hodor, hodor; hodor hodor, hodor. Hodor hodor. Hodor hodor HODOR! Hodor hodor hodor, hodor. Hodor hodor? Hodor hodor
+        HODOR! Hodor HODOR hodor, hodor hodor hodor hodor... Hodor hodor hodor. Hodor.</div>
+      <div class="tab-writing tab-pane" id="testimonials" role="tabpanel">Live-edge waistcoat four dollar toast, photo booth fixie next level skateboard vexillologist. Copper mug you probably haven't heard of them pork belly af 8-bit blog hammock. Meh glossier chia meditation, brooklyn post-ironic whatever jean shorts
+        pabst iceland truffaut hoodie YOLO tumeric. Listicle la croix af, gluten-free man bun tumeric unicorn food truck echo park cred thundercats literally ramps. Banjo echo park vegan DIY. Vexillologist live-edge asymmetrical taiyaki, occupy hella
+        raclette. 90's chartreuse helvetica chia jianbing XOXO tote bag air plant freegan. Locavore vinyl subway tile authentic VHS. Hell of 8-bit locavore ennui blog venmo lomo trust fund green juice flexitarian.
+      </div>
+    </div>
+  </div>
+
+  <!-- end tabs -->
+
+  <footer style="background:#2C99A4; margin-top: 25px; padding: 15px 0;">
+    <div class="container footer-container">
+      <div class="row">
+        <div class="col-sm-7 no-padding">
+          <div class="phone col-12">
+            <img src="./Assets/SVGs/contact0.svg" alt="Phone"><span>1-800-234-4567</span>
+          </div>
+          <div class="col-12 address">
+            <p>5678 Main Street, Denver, CO 80123</p>
+          </div>
+          <div class="social2 col-12 col-sm-6">
+            <a class="social-media" href="#!"><img src="./Assets/SVGs/facebook0.svg" alt="Facebook"></a>
+            <a class="social-media" href="#!"><img src="./Assets/SVGs/linkedin0.svg" alt="LinkedIn"></a>
+            <a class="social-media" href="#!"><img src="./Assets/SVGs/twitter0.svg" alt="Twitter"></a>
+            <a class="social-media" href="#!"><img src="./Assets/SVGs/youtube0.svg" alt="Youtube"></a>
+            <a class="social-media" href="#!"><img src="./Assets/SVGs/instagram0.svg" alt="Instagram"></a>
+          </div>
+        </div>
+        <div class="col-sm-5 no-padding margin-top-9">
+          <ul class="col-12 list-inline" id="site-link">
+            <li>
+              <a href="#!" class="site-links">Site Map</a>
+            </li>
+            <li>
+              <a href="#!" class="site-links">Terms of Use</a>
+            </li>
+            <li>
+              <a href="#!" class="site-links" id="privacy">Privacy Policy</a>
+            </li>
+          </ul>
+          <div class="col-12 copyright">
+            <span>©2016 TEN Realty. All Rights Reserved</span>
+          </div>
+          <div class="col-12 realtor-equal">
+            <img src="./Assets/SVGs/realtor.svg" alt="Realtor">
+            <img src="./Assets/SVGs/equal-housing.svg" alt="Equal Housing">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js " integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n " crossorigin="anonymous "></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js " integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb " crossorigin="anonymous "></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js " integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn " crossorigin="anonymous "></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
