@@ -28,9 +28,15 @@ body {
   }
 }
 
+.btn, .input-group-addon {
+  background-color: $teal;
+  color: $white;
+}
+
 
 .icon-bar {
   margin: auto;
+  background-color: $bondi-blue;
 }
 
 .navbar-toggle {
@@ -39,12 +45,26 @@ body {
   }
 }
 
-.navbar {
+#header {
   margin-bottom: 0px;
   background-color: $white;
+  // height: 100px;
 }
 
-#profile-section {
+// .navbar-brand {
+//   picture {
+//     img {
+//       height: 76px;
+//     }
+//   }
+// }
+
+#quick-search {
+  height: 61px;
+  background-color: $silver-chalice;
+}
+
+#agent-info {
   background-color: $gallery-grey;
 }
 
@@ -52,4 +72,10 @@ body {
   li {
     display: inline-block;
   }
+}
+
+#footer {
+  height: 100px;
+  width: 100%;
+  background-color: $bondi-blue;
 }

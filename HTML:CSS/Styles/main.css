@@ -55,20 +55,34 @@ body {
   .link-list .searchbar-link {
     flex-grow: 1; }
 
+.btn, .input-group-addon {
+  background-color: #00767A;
+  color: #fff; }
+
 .icon-bar {
-  margin: auto; }
+  margin: auto;
+  background-color: #009CAA; }
 
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px; }
 
-.navbar {
+#header {
   margin-bottom: 0px;
   background-color: #fff; }
 
-#profile-section {
+#quick-search {
+  height: 61px;
+  background-color: #AAAAAA; }
+
+#agent-info {
   background-color: #EEEEEE; }
 
 .social-icons li {
   display: inline-block; }
+
+#footer {
+  height: 100px;
+  width: 100%;
+  background-color: #009CAA; }
 
 /*# sourceMappingURL=main.css.map */
