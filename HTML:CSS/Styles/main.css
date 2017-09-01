@@ -45,4 +45,30 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+body {
+  font-family: "Lato", sans-serif; }
+
+.link-list {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between; }
+  .link-list .searchbar-link {
+    flex-grow: 1; }
+
+.icon-bar {
+  margin: auto; }
+
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 4px; }
+
+.navbar {
+  margin-bottom: 0px;
+  background-color: #fff; }
+
+#profile-section {
+  background-color: #EEEEEE; }
+
+.social-icons li {
+  display: inline-block; }
+
 /*# sourceMappingURL=main.css.map */

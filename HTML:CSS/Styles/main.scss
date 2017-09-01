@@ -13,3 +13,43 @@ $teal: #00767A;
 // Fonts
 $lato: 'Lato', sans-serif;
 $open-sans: 'Open Sans', sans-serif;
+
+
+body {
+  font-family: $lato;
+}
+
+.link-list {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  .searchbar-link {
+    flex-grow: 1;
+  }
+}
+
+
+.icon-bar {
+  margin: auto;
+}
+
+.navbar-toggle {
+  .icon-bar+.icon-bar {
+    margin-top: 4px;
+  }
+}
+
+.navbar {
+  margin-bottom: 0px;
+  background-color: $white;
+}
+
+#profile-section {
+  background-color: $gallery-grey;
+}
+
+.social-icons {
+  li {
+    display: inline-block;
+  }
+}
