@@ -14,9 +14,38 @@ $teal: #00767A;
 $lato: 'Lato', sans-serif;
 $open-sans: 'Open Sans', sans-serif;
 
+// Media Queries
+$sm-screen: "(max-width: 991px)";
+$md-screen: "(min-width: 992px)";
 
 body {
   font-family: $lato;
+}
+
+.nav-contact-account {
+  float: right;
+  .nav-item {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    span {
+      vertical-align: bottom;
+      display: inline-block;
+      position: relative;
+    }
+    img {
+      vertical-align: top;
+      margin-top: 6%;
+      margin-left: 0.7%;
+      position: relative;
+    }
+  }
 }
 
 .link-list {
@@ -33,7 +62,6 @@ body {
   color: $white;
 }
 
-
 .icon-bar {
   margin: auto;
   background-color: $bondi-blue;
@@ -45,19 +73,31 @@ body {
   }
 }
 
+#nav-toggle-links {
+  float: right;
+  padding-right: 15px;
+  li {
+    a {
+      color: $mine-shaft;
+    }
+  }
+}
+
 #header {
   margin-bottom: 0px;
   background-color: $white;
   // height: 100px;
 }
 
-// .navbar-brand {
-//   picture {
-//     img {
-//       height: 76px;
-//     }
-//   }
-// }
+.navbar-brand {
+  picture {
+    img {
+      @media #{$md-screen}{
+        height: 80px;
+      }
+    }
+  }
+}
 
 #quick-search {
   height: 61px;
@@ -78,4 +118,43 @@ body {
   height: 100px;
   width: 100%;
   background-color: $bondi-blue;
+}
+
+// Navbar Toggle Breakpoint Override - set to 991px breakpoint
+
+@media (max-width: 991px) {
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
 }
