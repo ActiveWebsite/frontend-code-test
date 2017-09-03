@@ -70,13 +70,6 @@ body {
       margin-left: 0.7%;
       position: relative; }
 
-.link-list {
-  display: flex;
-  flex-direction: row;
-  align-content: space-between; }
-  .link-list .searchbar-link {
-    flex-grow: 1; }
-
 .btn, .input-group-addon {
   background-color: #00767A;
   color: #fff; }
@@ -103,14 +96,68 @@ body {
     height: 80px; } }
 
 #quick-search {
-  height: 61px;
+  border-top: 1px solid #00767A;
   background-color: #AAAAAA; }
+  #quick-search .container .row {
+    padding-top: 10px;
+    padding-bottom: 11px; }
+
+.searchbar-input-md input {
+  height: 32px;
+  width: 100%; }
+
+.searchbar-btn-md .btn {
+  height: 32px;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px; }
+
+.link-list {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  padding-top: 10px; }
+  .link-list .searchbar-link {
+    flex-grow: 1;
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    text-align: center; }
+    .link-list .searchbar-link a {
+      color: #fff;
+      text-decoration: underline;
+      text-decoration-color: #d9d9d9; }
 
 #agent-info {
-  background-color: #EEEEEE; }
-
-.social-icons li {
-  display: inline-block; }
+  background-color: #EEEEEE;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  #agent-info #name-contact-social {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    #agent-info #name-contact-social h1 {
+      font-size: 36px;
+      font-family: "Lato", sans-serif;
+      color: #323232;
+      letter-spacing: 2px; }
+    #agent-info #name-contact-social h4 {
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;
+      color: #AAAAAA;
+      margin-top: 20px;
+      letter-spacing: 1px; }
+    #agent-info #name-contact-social .btn {
+      width: 100%;
+      font-size: 18px;
+      font-family: "Lato", sans-serif;
+      letter-spacing: 1px;
+      padding: 7px;
+      margin-top: 25px; }
+    #agent-info #name-contact-social .social-icons {
+      margin-top: 25px;
+      display: flex;
+      justify-content: space-between; }
 
 #footer {
   height: 100px;
