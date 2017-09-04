@@ -27,11 +27,11 @@
           </button>
           <section class="nav-contact-account visible-xs visible-sm">
             <button class="nav-item">
-              <img src="./Assets/SVGs/contact.svg" alt="Contact Image">
+              <img src="./Assets/SVGs/contact-teal.svg" alt="Contact Image">
               <span>Contact</span>
             </button>
             <button class="nav-item">
-              <img src="./Assets/SVGs/account.svg" alt="Account Image">
+              <img src="./Assets/SVGs/account-teal.svg" alt="Account Image">
               <span>Account</span>
             </button>
           </section>
@@ -72,7 +72,7 @@
             <div class="input-group">
               <input type="text" class="form-control" placeholder="Address, City, Zip, or MLS#" aria-describedby="xs-search">
               <span class="input-group-addon" id="xs-search">
-                <img src="./Assets/SVGs/search.svg" alt="Search">
+                <img src="./Assets/SVGs/search-white.svg" alt="Search">
               </span>
             </div>
           </div>
@@ -116,8 +116,8 @@
           <div id="agent-links" class="col-xs-12 col-sm-4 col-md-4 col-md-offset-1">
             <div class="agent-links-wrapper">
               <div class="agent-link">
-                <img src="./Assets/SVGs/contact-teal.svg" alt="Phone Image">
-                <span>530.830.2150</span>
+                <img src="./Assets/SVGs/contact-teal-big.svg" alt="Phone Image">
+                <span class="phone-number">530.830.2150</span>
               </div>
               <div class="agent-link">
                 <img src="./Assets/SVGs/website-teal.svg" alt="Website Image">
@@ -138,28 +138,39 @@
     </div>
     <nav id="tabs">
       <div class="container">
-        <ul class="nav nav-tabs nav-justified" role="tablist">
+        <ul class="nav nav-tabs nav-justified hidden-xs" role="tablist">
           <li role="presentation" class="active">
-            <a href="#about-me" aria-controls="about-me" role="tab" data-toggle="tab">
+            <a class="one-tab" href="#about-me" aria-controls="about-me" role="tab" data-toggle="tab">
               About Me
             </a>
           </li>
           <li role="presentation">
-            <a href="#my-listings" aria-controls="my-listings" role="tab" data-toggle="tab">
+            <a class="one-tab" href="#my-listings" aria-controls="my-listings" role="tab" data-toggle="tab">
               My Listings
             </a>
           </li>
           <li role="presentation">
-            <a href="#my-solds" aria-controls="my-solds" role="tab" data-toggle="tab">
+            <a class="one-tab" href="#my-solds" aria-controls="my-solds" role="tab" data-toggle="tab">
               My Solds
             </a>
           </li>
           <li role="presentation">
-            <a href="#testimonials" aria-controls="testimonials" role="tab" data-toggle="tab">
+            <a class="one-tab" href="#testimonials" aria-controls="testimonials" role="tab" data-toggle="tab">
               Testimonials
             </a>
           </li>
         </ul>
+        <div class="dropdown visible-xs">
+          <button class="btn dropdown-toggle" type="button" id="tabs-dropdown-xs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            About Me
+            <img src="./Assets/SVGs/angle-down.svg" alt="">
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="tabs-dropdown-xs">
+            <li><a href="#">My Listings</a></li>
+            <li><a href="#">My Solds</a></li>
+            <li><a href="#">Testimonials</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
 
@@ -169,9 +180,9 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </article>
         <aside class="about-me-sidebar col-sm-3 col-md-offset-1">
-          <h1>LANGUAGES</h1>
+          <h1>LANGUAGE</h1>
           <p>Dutch, Finnish, Spanish</p>
-          <h1>DESIGNATIONS</h1>
+          <h1 class="designations">DESIGNATIONS</h1>
           <p>CRS, GRI, CNE</p>
         </aside>
       </section>

@@ -3,11 +3,13 @@
 // Colors
 $white: #fff;
 $gallery-grey: #EEEEEE;
+$dove-grey: #6D6D6D;
 $scorpion-grey: #595959;
 $mine-shaft: #323232;
 $silver: #C2C2C2;
 $silver-chalice: #AAAAAA;
 $bondi-blue: #009CAA;
+$eastern-blue: #2399A6;
 $teal: #00767A;
 
 // Fonts
@@ -49,7 +51,7 @@ body {
   }
 }
 
-.btn, .input-group-addon {
+.input-group-addon {
   background-color: $teal;
   color: $white;
 }
@@ -116,7 +118,8 @@ body {
     font-family: $lato;
     letter-spacing: 1px;
     padding: 7px;
-
+    background-color: $teal;
+    color: $white;
   }
 }
 
@@ -209,6 +212,8 @@ body {
     letter-spacing: 1px;
     padding: 7px;
     margin-top: 25px;
+    background-color: $teal;
+    color: $white;
   }
   .social-icons {
     margin-top: 25px;
@@ -221,25 +226,100 @@ body {
 
 .agent-links-wrapper {
   width: 100%;
-  // height: 100%;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-around;
   .agent-link {
+    padding-bottom: 20px;
     img {
-
+      padding-right: 20px;
     }
     span {
-      
+      color: $teal;
+      font-size: 16px;
+      vertical-align: +5px;
+    }
+    .phone-number {
+      color: $scorpion-grey;
+    }
+  }
+}
+
+#tabs {
+  margin-top: 36px;
+  font-size: 18px;
+  font-family: $lato;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: $gallery-grey;
+  .nav-justified {
+    li {
+      border-bottom: 2px solid $silver;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      .one-tab {
+        border: none;
+        color: $silver;
+      }
+    }
+    .active {
+      border-bottom: 2px solid $eastern-blue;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      .one-tab {
+        border: none;
+        color: $teal;
+      }
+    }
+  }
+  .dropdown-toggle {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid $silver;
+    border-radius: 0;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: $teal;
+    display: flex;
+    justify-content: space-between;
+    img {
+      padding-top: 8px;
+    }
+  }
+}
+
+#about-me {
+  padding-top: 30px;
+  .about-me-bio {
+    font-size: 13px;
+    font-family: $open-sans;
+    line-height: 2;
+    padding-left: 0;
+  }
+  .about-me-sidebar {
+    padding-right: 0;
+    h1 {
+      line-height: 2;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-bottom: 5px;
+    }
+    p {
+      font-size: 15px;
+      font-family: $open-sans;
+    }
+    .designations {
+      margin-top: 30px;
     }
   }
 }
 
 
-
 #footer {
   height: 100px;
   width: 100%;
+  margin-top: 40px;
   background-color: $bondi-blue;
 }
 

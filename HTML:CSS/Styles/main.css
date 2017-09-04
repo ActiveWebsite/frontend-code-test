@@ -70,7 +70,7 @@ body {
       margin-left: 0.7%;
       position: relative; }
 
-.btn, .input-group-addon {
+.input-group-addon {
   background-color: #00767A;
   color: #fff; }
 
@@ -113,7 +113,9 @@ body {
   font-size: 18px;
   font-family: "Lato", sans-serif;
   letter-spacing: 1px;
-  padding: 7px; }
+  padding: 7px;
+  background-color: #00767A;
+  color: #fff; }
 
 @media (min-width: 768px) {
   #quick-search .row {
@@ -183,7 +185,9 @@ body {
     font-family: "Lato", sans-serif;
     letter-spacing: 1px;
     padding: 7px;
-    margin-top: 25px; }
+    margin-top: 25px;
+    background-color: #00767A;
+    color: #fff; }
   .agent-info-wrapper .social-icons {
     margin-top: 25px;
     display: flex;
@@ -191,10 +195,79 @@ body {
 
 .agent-links-wrapper {
   width: 100%; }
+  .agent-links-wrapper .agent-link {
+    padding-bottom: 20px; }
+    .agent-links-wrapper .agent-link img {
+      padding-right: 20px; }
+    .agent-links-wrapper .agent-link span {
+      color: #00767A;
+      font-size: 16px;
+      vertical-align: +5px; }
+    .agent-links-wrapper .agent-link .phone-number {
+      color: #595959; }
+
+#tabs {
+  margin-top: 36px;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #EEEEEE; }
+  #tabs .nav-justified li {
+    border-bottom: 2px solid #C2C2C2;
+    border-top: none;
+    border-left: none;
+    border-right: none; }
+    #tabs .nav-justified li .one-tab {
+      border: none;
+      color: #C2C2C2; }
+  #tabs .nav-justified .active {
+    border-bottom: 2px solid #2399A6;
+    border-top: none;
+    border-left: none;
+    border-right: none; }
+    #tabs .nav-justified .active .one-tab {
+      border: none;
+      color: #00767A; }
+  #tabs .dropdown-toggle {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #C2C2C2;
+    border-radius: 0;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #00767A;
+    display: flex;
+    justify-content: space-between; }
+    #tabs .dropdown-toggle img {
+      padding-top: 8px; }
+
+#about-me {
+  padding-top: 30px; }
+  #about-me .about-me-bio {
+    font-size: 13px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 2;
+    padding-left: 0; }
+  #about-me .about-me-sidebar {
+    padding-right: 0; }
+    #about-me .about-me-sidebar h1 {
+      line-height: 2;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-bottom: 5px; }
+    #about-me .about-me-sidebar p {
+      font-size: 15px;
+      font-family: "Open Sans", sans-serif; }
+    #about-me .about-me-sidebar .designations {
+      margin-top: 30px; }
 
 #footer {
   height: 100px;
   width: 100%;
+  margin-top: 40px;
   background-color: #009CAA; }
 
 @media (max-width: 991px) {
