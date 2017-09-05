@@ -22,8 +22,8 @@
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span>Menu</span>
+            <span class="icon-bar bottom-bar"></span>
+            <span class="menu-btn-text">Menu</span>
           </button>
           <section class="nav-contact-account visible-xs visible-sm">
             <button class="nav-item">
@@ -68,13 +68,13 @@
     <nav id="quick-search">
       <div class="container">
         <div class="row">
-          <div class="searchbar-input-xs visible-xs col-xs-12">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Address, City, Zip, or MLS#" aria-describedby="xs-search">
-              <span class="input-group-addon" id="xs-search">
-                <img src="./Assets/SVGs/search-white.svg" alt="Search">
-              </span>
-            </div>
+          <div class="searchbar-input-xs visible-xs col-xs-9">
+            <input type="text" class="form-control" placeholder="Address, City, Zip, or MLS#">
+          </div>
+          <div class="searchbar-btn-xs visible-xs col-xs-3">
+            <button type="submit" class="btn">
+              <img src="./Assets/SVGs/search-white.svg" alt="Search">
+            </button>
           </div>
           <div class="searchbar-input-md hidden-xs col-sm-4 col-md-3">
             <input class="" type="text" placeholder="Address, City, Zip, or MLS#">
@@ -105,11 +105,11 @@
               <h4>REALTOR&reg;</h4>
               <button type="button" class="btn">Contact Me</button>
               <div class="social-icons">
-                <img class="svg" src="./Assets/SVGs/facebook-grey.svg" alt="Facebook Icon">
-                <img class="svg" src="./Assets/SVGs/linkedin-grey.svg" alt="LinkedIn Icon">
-                <img class="svg" src="./Assets/SVGs/twitter-grey.svg" alt="Twitter Icon">
-                <img class="svg" src="./Assets/SVGs/youtube-grey.svg" alt="Youtube Icon">
-                <img class="svg" src="./Assets/SVGs/instagram-grey.svg" alt="Instagram Icon">
+                <img class="svg" src="./Assets/SVGs/facebook-grey.svg" alt="Facebook">
+                <img class="svg" src="./Assets/SVGs/linkedin-grey.svg" alt="LinkedIn">
+                <img class="svg" src="./Assets/SVGs/twitter-grey.svg" alt="Twitter">
+                <img class="svg" src="./Assets/SVGs/youtube-grey.svg" alt="Youtube">
+                <img class="svg" src="./Assets/SVGs/instagram-grey.svg" alt="Instagram">
               </div>
             </div>
           </div>
@@ -136,6 +136,7 @@
         </div>
       </div>
     </div>
+    
     <nav id="tabs">
       <div class="container">
         <ul class="nav nav-tabs nav-justified hidden-xs" role="tablist">
@@ -193,10 +194,38 @@
 
     <footer id="footer">
       <div class="container">
-        <section class="footer-left">
-        </section>
-        <section class="footer-right">
-        </section>
+        <div class="row">
+          <section class="footer-left col-sm-6 col-md-5 col-lg-4">
+            <div class="company-phone">
+              <img src="./Assets/SVGs/contact-white.svg" alt="Phone">
+              <span>1-800-234-4567</span>
+            </div>
+            <div class="company-address">
+              <p>5678 Main Street, Denver, CO 80123</p>
+            </div>
+            <div class="social-icons">
+              <img class="svg" src="./Assets/SVGs/facebook-white.svg" alt="Facebook">
+              <img class="svg" src="./Assets/SVGs/linkedin-white.svg" alt="LinkedIn">
+              <img class="svg" src="./Assets/SVGs/twitter-white.svg" alt="Twitter">
+              <img class="svg" src="./Assets/SVGs/youtube-white.svg" alt="Youtube">
+              <img class="svg" src="./Assets/SVGs/instagram-white.svg" alt="Instagram">
+            </div>
+          </section>
+          <section class="footer-right col-sm-6 col-md-5 col-md-offset-2 col-lg-4 col-lg-offset-4">
+            <ul class="footer-links">
+              <li class="foot-link"><a href="#">Site Map</a></li>
+              <li class="foot-link"><a href="#">Terms of Use</a></li>
+              <li class="foot-link"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <div class="footer-copyright">
+              <span>©2016 TEN Realty. All Rights Reserved</span>
+            </div>
+            <div class="footer-main-logos">
+              <img src="./Assets/SVGs/realtor-white.svg" alt="Realtor">
+              <img class="equal-house" src="./Assets/SVGs/equal-housing-white.svg" alt="Equal Housing">
+            </div>
+          </section>
+        </div>
       </div>
     </footer>
 

@@ -50,8 +50,12 @@ body {
 
 .nav-contact-account {
   float: right; }
+  @media (min-width: 992px) {
+    .nav-contact-account {
+      padding-right: 4px; } }
   .nav-contact-account .nav-item {
-    margin-top: 8px;
+    padding: 0;
+    margin-top: 10px;
     margin-bottom: 8px;
     display: table-cell;
     text-align: center;
@@ -61,13 +65,17 @@ body {
     border: 1px solid transparent;
     border-radius: 4px; }
     .nav-contact-account .nav-item span {
+      color: #595959;
       vertical-align: bottom;
       display: inline-block;
-      position: relative; }
+      position: relative;
+      font-size: 12px;
+      letter-spacing: 1px; }
     .nav-contact-account .nav-item img {
       vertical-align: top;
       margin-top: 6%;
       margin-left: 0.7%;
+      margin-bottom: 6px;
       position: relative; }
 
 .input-group-addon {
@@ -78,13 +86,27 @@ body {
   margin: auto;
   background-color: #009CAA; }
 
-.navbar-toggle .icon-bar + .icon-bar {
-  margin-top: 4px; }
+.navbar-toggle {
+  margin-top: 15px;
+  margin-bottom: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 14px; }
+  .navbar-toggle .icon-bar + .icon-bar {
+    margin-top: 4px; }
+  .navbar-toggle .bottom-bar {
+    margin-bottom: 6.5px; }
+  .navbar-toggle .menu-btn-text {
+    color: #595959;
+    font-size: 12px;
+    letter-spacing: 1px; }
 
 #nav-toggle-links {
   float: right;
   padding-right: 15px; }
   #nav-toggle-links li a {
+    padding-bottom: 10px;
     color: #323232; }
 
 #header {
@@ -95,8 +117,10 @@ body {
   .navbar-brand picture img {
     height: 80px; } }
 
+.navbar > .container-fluid .navbar-brand {
+  margin-left: 0px; }
+
 #quick-search {
-  border-top: 1px solid #00767A;
   background-color: #AAAAAA; }
   #quick-search .container .row {
     padding-top: 10px;
@@ -106,7 +130,10 @@ body {
   height: 41px;
   width: 100%;
   padding: 10px;
-  border: none; }
+  border: none;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: #323232; }
 
 .searchbar-btn-md .btn {
   width: 100%;
@@ -116,6 +143,26 @@ body {
   padding: 7px;
   background-color: #00767A;
   color: #fff; }
+
+.searchbar-input-xs {
+  padding-right: 0;
+  margin-right: -15px; }
+  .searchbar-input-xs .form-control {
+    line-height: 3;
+    height: 40px;
+    border: 0;
+    border-radius: 0; }
+
+.searchbar-btn-xs {
+  padding-left: 0;
+  padding-right: 0; }
+  .searchbar-btn-xs .btn {
+    height: 40px;
+    width: 100%;
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: #00767A; }
 
 @media (min-width: 768px) {
   #quick-search .row {
@@ -173,12 +220,18 @@ body {
     font-family: "Lato", sans-serif;
     color: #323232;
     letter-spacing: 2px; }
+    @media (max-width: 768px) {
+      .agent-info-wrapper h1 {
+        margin-top: 10px; } }
   .agent-info-wrapper h4 {
     font-size: 14px;
     font-family: "Open Sans", sans-serif;
     color: #AAAAAA;
     margin-top: 20px;
     letter-spacing: 1px; }
+    @media (max-width: 768px) {
+      .agent-info-wrapper h4 {
+        margin-top: 10px; } }
   .agent-info-wrapper .btn {
     width: 100%;
     font-size: 18px;
@@ -188,10 +241,17 @@ body {
     margin-top: 25px;
     background-color: #00767A;
     color: #fff; }
+    @media (max-width: 768px) {
+      .agent-info-wrapper .btn {
+        margin-top: 20px; } }
   .agent-info-wrapper .social-icons {
     margin-top: 25px;
     display: flex;
     justify-content: space-between; }
+
+@media (max-width: 768px) {
+  #agent-links {
+    margin-top: 25px; } }
 
 .agent-links-wrapper {
   width: 100%; }
@@ -250,8 +310,16 @@ body {
     font-family: "Open Sans", sans-serif;
     line-height: 2;
     padding-left: 0; }
+    @media (max-width: 768px) {
+      #about-me .about-me-bio {
+        padding: 0;
+        font-size: 14px; } }
   #about-me .about-me-sidebar {
     padding-right: 0; }
+    @media (max-width: 768px) {
+      #about-me .about-me-sidebar {
+        padding: 0;
+        margin-top: 30px; } }
     #about-me .about-me-sidebar h1 {
       line-height: 2;
       font-size: 16px;
@@ -265,10 +333,70 @@ body {
       margin-top: 30px; }
 
 #footer {
-  height: 100px;
   width: 100%;
   margin-top: 40px;
-  background-color: #009CAA; }
+  background-color: #009CAA;
+  color: #fff;
+  font-family: "Lato", sans-serif; }
+  #footer .row {
+    margin-top: 24px;
+    margin-bottom: 24px; }
+
+.footer-left {
+  font-size: 16px; }
+  @media (max-width: 768px) {
+    .footer-left {
+      text-align: center; } }
+  .footer-left .company-phone {
+    letter-spacing: 1px; }
+    .footer-left .company-phone img {
+      padding-right: 4px; }
+  .footer-left .company-address {
+    margin-top: 10px;
+    letter-spacing: 1px; }
+  .footer-left .social-icons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between; }
+    @media (min-width: 768px) {
+      .footer-left .social-icons {
+        width: 220px; } }
+
+.footer-right .footer-links {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between; }
+  .footer-right .footer-links .foot-link {
+    flex-grow: 1;
+    letter-spacing: 1px;
+    text-align: right; }
+    @media (max-width: 768px) {
+      .footer-right .footer-links .foot-link {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 14px; } }
+    .footer-right .footer-links .foot-link a {
+      color: #fff;
+      text-decoration: underline; }
+.footer-right .footer-copyright {
+  font-size: 12px;
+  text-align: right;
+  letter-spacing: 1px;
+  margin-top: 15px; }
+  @media (max-width: 768px) {
+    .footer-right .footer-copyright {
+      margin-top: 20px;
+      text-align: center; } }
+.footer-right .footer-main-logos {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px; }
+  @media (max-width: 768px) {
+    .footer-right .footer-main-logos {
+      margin-top: 20px;
+      justify-content: center; } }
+  .footer-right .footer-main-logos .equal-house {
+    padding-left: 20px; }
 
 @media (max-width: 991px) {
   .navbar-header {
