@@ -1,11 +1,16 @@
 body, html {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  flex: 1; }
 
 body {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  min-height: 100vh; }
+
+main {
+  flex: 1; }
 
 li {
   display: inline-block;
@@ -67,8 +72,6 @@ a {
 
 .navbar {
   margin-top: 1em;
-  padding-left: 7em;
-  padding-right: 28em;
   background-color: #aaaaaa;
   border-radius: 0;
   margin-bottom: 0;
@@ -84,8 +87,7 @@ a {
   padding-top: 3em; }
 
 .prof-pic {
-  padding: 0;
-  padding-left: 10em; }
+  padding: 0; }
 
 .realtor-image {
   height: 300px;
@@ -118,7 +120,13 @@ a {
   width: 15em;
   margin-top: 1em;
   background-color: #257378;
-  color: white; }
+  color: white;
+  border-color: none !important; }
+
+.contact-button:hover {
+  background-color: #2599a6 !important;
+  color: white !important;
+  border-color: none !important; }
 
 .phone-info {
   display: flex;
@@ -159,45 +167,68 @@ a {
 .search-button {
   width: 12em;
   background-color: #257378;
-  color: white; }
+  color: white;
+  border-color: none !important; }
+
+.search-button:hover {
+  background-color: #2599a6 !important;
+  color: white !important;
+  border-color: none !important; }
 
 .main-profile-body {
   background-color: #efefef;
   padding-top: 0;
-  padding-bottom: 0;
   border: none; }
-
-.btn-group-justified {
-  padding-left: 10em;
-  padding-right: 10em; }
 
 .btn-default {
   border-top: none;
   border-left: none;
-  border-right: none; }
+  border-right: none;
+  padding-left: 0;
+  padding-right: 0; }
 
-.bio-text-container {
-  padding-left: 10em;
-  margin: 0; }
+.button-container {
+  padding: 0 !important; }
 
+.button-mid {
+  margin-top: 3em; }
+
+.container {
+  width: 85vw;
+  margin: 0 auto; }
+
+.well {
+  padding-bottom: 0; }
+
+@media (max-width: 320px) {
+  .container {
+    width: 95vw; } }
 .bio-text {
   padding-top: 3em;
   line-height: 20px;
   letter-spacing: 3px;
   font-size: 12px; }
 
+.bio-body {
+  padding: 0 !important; }
+
+.bio-text-container {
+  padding: 0 !important; }
+
 .special-notes-container {
-  padding-left: 10em;
   padding-top: 3em;
   padding-right: 0;
+  padding-left: 10em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start; }
 
+@media (max-width: 992px) {
+  .special-notes-container {
+    padding-left: 0 !important; } }
 .footer-nav-notes {
   display: flex;
-  padding-right: 10em;
   align-items: flex-end;
   flex-direction: column;
   padding-top: 2em; }
@@ -205,15 +236,23 @@ a {
 .footer-nav-links {
   padding-bottom: 1em; }
 
+@media (max-width: 400px) {
+  .footer-contact {
+    align-items: center; }
+
+  .footer-nav-notes {
+    align-items: center; }
+
+  .footer-nav-links {
+    display: flex;
+    justify-content: center;
+    font-size: 12px; } }
 .footer-contact {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding-left: 10em; }
+  justify-content: flex-start; }
 
 .main-footer {
-  bottom: 0 !important;
-  position: relative;
   width: 100%;
   margin-bottom: 0;
   padding-bottom: 0; }
@@ -232,8 +271,15 @@ a {
   margin-left: 1em; }
 
 .social-icons-bottom {
+  display: flex;
+  justify-content: flex-start;
   margin: 0; }
 
+@media (max-width: 400px) {
+  .social-icons-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 0; } }
 .navbar-default .navbar-nav > li > a:hover {
   color: white; }
 
@@ -243,6 +289,6 @@ a {
 .btn-default:hover {
   color: #009baa;
   border-color: #009baa;
-  background-color: none; }
+  background-color: white; }
 
 /*# sourceMappingURL=style.css.map */
