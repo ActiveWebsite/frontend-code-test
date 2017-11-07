@@ -86,6 +86,9 @@ a {
   padding-right: 8em;
   padding-top: 3em; }
 
+.colored-text {
+  color: red; }
+
 .prof-pic {
   padding: 0; }
 
@@ -95,26 +98,32 @@ a {
 
 .social-icons {
   display: flex;
-  width: auto;
+  justify-content: flex-start;
+  width: 100%;
   padding-top: .5em;
   padding-left: 0; }
 
 .fbook-icon {
   margin: 1em;
   margin-left: 0;
-  padding-left: 0; }
+  padding-left: 0;
+  fill: #595959; }
 
 .linkedIn-icon {
-  margin: 1em; }
+  margin: 1em;
+  fill: #595959; }
 
 .twitter-icon {
-  margin: 1em; }
+  margin: 1em;
+  fill: #595959; }
 
 .ytube-icon {
-  margin: 1em; }
+  margin: 1em;
+  fill: #595959; }
 
 .insta-icon {
-  margin: 1em; }
+  margin: 1em;
+  fill: #595959; }
 
 .contact-button {
   width: 15em;
@@ -148,21 +157,25 @@ a {
   justify-content: flex-start;
   margin: 1em; }
 
-#contact-icon {
-  padding: 1em;
-  padding-top: 0; }
+.profile-icon {
+  margin-right: 1em;
+  padding-top: 0;
+  fill: #009da7; }
 
-#website-icon {
-  padding: 1em;
-  padding-top: 0; }
+.color-text {
+  color: #007d83; }
 
-#address-icon {
-  padding: 1em;
-  padding-top: 0; }
+.footer-icon {
+  margin-right: 1em;
+  padding-top: 0;
+  fill: white; }
 
-#news-icon {
-  padding: 1em;
-  padding-top: 0; }
+.bottom-text {
+  color: white;
+  margin-bottom: 0; }
+
+.top-icon {
+  fill: #009da7; }
 
 .search-button {
   width: 12em;
@@ -179,6 +192,9 @@ a {
   background-color: #efefef;
   padding-top: 0;
   border: none; }
+
+.prof-cont {
+  background-color: #efefef; }
 
 .btn-default {
   border-top: none;
@@ -228,7 +244,7 @@ a {
   padding-top: 2em; }
 
 .footer-nav-links {
-  padding-bottom: 1em; }
+  padding-bottom: .2em; }
 
 .footer-contact {
   display: flex;
@@ -238,7 +254,8 @@ a {
 .main-footer {
   width: 100%;
   margin-bottom: 0;
-  padding-bottom: 0; }
+  padding-bottom: 0;
+  background-color: #2599a6; }
 
 .footer-body {
   background-color: #2599a6; }
@@ -268,6 +285,9 @@ a {
   color: #009baa;
   border-color: #009baa;
   background-color: white; }
+
+.form-control {
+  width: 300px; }
 
 @media (max-width: 320px) {
   .container {
