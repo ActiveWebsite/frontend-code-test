@@ -1,0 +1,248 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
+
+body {
+  display: flex;
+  flex-direction: column; }
+
+li {
+  display: inline-block;
+  padding: 1em;
+  padding-top: 0;
+  padding-bottom: 0; }
+
+h1 {
+  margin: .5em;
+  margin-left: 0; }
+
+a {
+  color: white;
+  text-decoration: underline; }
+
+.main-header {
+  display: flex;
+  justify-content: space-around;
+  height: 6em;
+  margin: 0;
+  margin-bottom: 1em; }
+
+.main-logo-container {
+  display: flex; }
+
+.main-logo {
+  height: 80px;
+  margin: 1em; }
+
+.header-nav-links {
+  padding: 0;
+  margin: 0;
+  float: right;
+  position: relative;
+  justify-content: flex-end; }
+
+.side-stuff {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end; }
+
+.small-contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1em;
+  padding-right: 1em; }
+
+.small-top-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1em;
+  margin-left: 1em;
+  margin-right: .8em; }
+
+.navbar {
+  margin-top: 1em;
+  padding-left: 7em;
+  padding-right: 28em;
+  background-color: #aaaaaa;
+  border-radius: 0;
+  margin-bottom: 0;
+  border-bottom: none; }
+
+.contact-center {
+  padding: 0;
+  max-width: 30vw;
+  padding-top: 3em; }
+
+.contact-right {
+  padding-right: 8em;
+  padding-top: 3em; }
+
+.prof-pic {
+  padding: 0;
+  padding-left: 10em; }
+
+.realtor-image {
+  height: 300px;
+  width: auto; }
+
+.social-icons {
+  display: flex;
+  width: auto;
+  padding-top: .5em;
+  padding-left: 0; }
+
+.fbook-icon {
+  margin: 1em;
+  margin-left: 0;
+  padding-left: 0; }
+
+.linkedIn-icon {
+  margin: 1em; }
+
+.twitter-icon {
+  margin: 1em; }
+
+.ytube-icon {
+  margin: 1em; }
+
+.insta-icon {
+  margin: 1em; }
+
+.contact-button {
+  width: 15em;
+  margin-top: 1em;
+  background-color: #257378;
+  color: white; }
+
+.phone-info {
+  display: flex;
+  justify-content: flex-start;
+  margin: 1em; }
+
+.website-info {
+  display: flex;
+  justify-content: flex-start;
+  margin: 1em; }
+
+.address-info {
+  display: flex;
+  justify-content: flex-start;
+  margin: 1em; }
+
+.newsLetter-info {
+  display: flex;
+  justify-content: flex-start;
+  margin: 1em; }
+
+#contact-icon {
+  padding: 1em;
+  padding-top: 0; }
+
+#website-icon {
+  padding: 1em;
+  padding-top: 0; }
+
+#address-icon {
+  padding: 1em;
+  padding-top: 0; }
+
+#news-icon {
+  padding: 1em;
+  padding-top: 0; }
+
+.search-button {
+  width: 12em;
+  background-color: #257378;
+  color: white; }
+
+.main-profile-body {
+  background-color: #efefef;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: none; }
+
+.btn-group-justified {
+  padding-left: 10em;
+  padding-right: 10em; }
+
+.btn-default {
+  border-top: none;
+  border-left: none;
+  border-right: none; }
+
+.bio-text-container {
+  padding-left: 10em;
+  margin: 0; }
+
+.bio-text {
+  padding-top: 3em;
+  line-height: 20px;
+  letter-spacing: 3px;
+  font-size: 12px; }
+
+.special-notes-container {
+  padding-left: 10em;
+  padding-top: 3em;
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; }
+
+.footer-nav-notes {
+  display: flex;
+  padding-right: 10em;
+  align-items: flex-end;
+  flex-direction: column;
+  padding-top: 2em; }
+
+.footer-nav-links {
+  padding-bottom: 1em; }
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 10em; }
+
+.main-footer {
+  bottom: 0 !important;
+  position: relative;
+  width: 100%;
+  margin-bottom: 0;
+  padding-bottom: 0; }
+
+.footer-body {
+  background-color: #2599a6; }
+
+.phone-info-bottom {
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 0;
+  padding-top: 2em; }
+
+.business-address {
+  margin-left: 1em; }
+
+.social-icons-bottom {
+  margin: 0; }
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: white; }
+
+.navbar-default .navbar-nav > li > a {
+  color: white; }
+
+.btn-default:hover {
+  color: #009baa;
+  border-color: #009baa;
+  background-color: none; }
+
+/*# sourceMappingURL=style.css.map */
