@@ -50,9 +50,9 @@
 	<div id="header">
 		<h1>Javascript Tests</h1>
 	</div>
-	
-	
-	
+
+
+
 	<h2>Manipulate the Last LI</h2>
 	<p>Select the Last Li in this list and turn its text red.</p>
 	<div id="content">
@@ -67,11 +67,11 @@
 			</div>
 		</div>
 	</div>
-	
-	
-	
-	
-	
+
+
+
+
+
 	<h2>Select specific children from a nested list.</h2>
 	<p>Select the only the first children of the LI "Sally".</p>
 	<div id="content2">
@@ -101,50 +101,101 @@
 			</div>
 		</div>
 	</div>
-	
-	
-	
-	
-	
+
+
+
+
+
 	<h2>Get a Field value and Write it to the page</h2>
 	<p>Write the value of the "Code Types" select field to a new div within the fieldset.</p>
 	<form method="post" action="">
 		<fieldset>
 			<label> Code Types:
-				<select name="CodeTypes">
+				<select id="codeTypes" name="CodeTypes">
 					<option value="">Choose</option>
-					<option value="php">PHP</option>
-					<option value="c+">C+</option>
-					<option value="asp" selected="selected">ASP</option>
+					<option value="PHP">PHP</option>
+					<option value="C+">C+</option>
+					<option value="ASP">ASP</option>
 				</select>
 			</label>
+			<div class="code-type-list">
+
+			</div>
 		</fieldset>
 	</form>
-	
-	
-	
-	
+
+
+
+
 	<h2>Find Dimensions of an Element</h2>
 	<p>Write actual rendered dimensions of the following div including any padding to the div itself.</p>
-	<div id="setDims">This is a div. How big am i?</div>
-	
-	
-	
-	
+	<div id="setDims">320px X 170px</div>
+	<h3>320px X 170px</h3>
+
+
+
+
 	<h2>Events</h2>
 	<p>Place a click event on the following link. When clicked toggle it's class name from 'clicked' to 'not-clicked'.</p>
 	<a id="clickEventLink" href="#clicked" title="Click Me" class="not-clicked">Click Me</a>
-	
-	
-	
-	
+
+
+
+
 	<h2>Ajax</h2>
 	<p>Call ajax_return.html and write's its json as a "name": "value" list to the following div:</p>
-	<div id="jsonResponse">My Response Was...</div>
+	<div id="jsonResponse">My Response Was...</br></div>
 <!--
 Place your answers below this comment block.
 Note: You have jquery already loaded on the page.
 Please also write your jquery in a no conflict manner.
 -->
+
+<script>
+<!-- Manipulate the last LI-->
+
+	jQuery(document).ready(function() {
+		jQuery('#content ul li:last').css('color', 'red');
+
+<!-- Specific Children From Nested List-->
+
+		jQuery('#content2 > div > div > ul > li > ul > li:last-child > ul').css('color', 'black');
+		jQuery('#content2 > div > div > ul > li > ul > li').css('color', 'red');
+
+
+<!-- Append Code Types-->
+
+		jQuery('select').on('change', function (e) {
+		    var dropDownSelect = jQuery("option:selected", this).text();
+		    var valueSelected = this.value;
+				console.log(valueSelected);
+				jQuery('.code-type-list').append(`<li>${valueSelected}</li>`);
+	});
+
+<!-- Toggle Clicked Class-->
+
+		jQuery('#clickEventLink').on('click', (e) => {
+			e.preventDefault();
+			jQuery('#clickEventLink').toggleClass('clicked not-clicked');
+		});
+
+	});
+
+<!-- Get Dimensions-->
+
+	var width = jQuery('#setDims').width();
+	var height = jQuery('#setDims').height();
+	console.log(width, height);
+
+<!-- Reformatting-->
+
+jQuery.ajax({url: "./ajax_return.html", success: function(result){
+		let reformatResponse = jQuery.parseJSON(result);
+		for(var i in reformatResponse) {
+			jQuery("#jsonResponse").append('<br/>' +  i + ': ' + reformatResponse[i] + '<br />');
+		}
+}});
+
+</script>
 </body>
 </html>
